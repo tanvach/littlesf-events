@@ -15,6 +15,11 @@
   <section><h2>Upcoming</h2><ul id="list" class="list"></ul>
     <p id="empty" class="muted" style="display:none">No events yet.</p></section>
 </main>
+<div id="overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:40">
+  <div id="modal" style="max-width:680px;margin:60px auto;background:#fff;color:#0f172a;border-radius:10px;padding:20px;position:relative">
+    <button id="close" style="position:absolute;right:8px;top:8px;background:#e2e8f0;border:none;border-radius:6px;padding:6px 10px;cursor:pointer">Close</button>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/rrule@2.7.2/dist/es5/rrule.min.js"></script>
 <script src="/assets/app.js"></script>

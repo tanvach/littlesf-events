@@ -32,6 +32,9 @@
         obj.start = ev.start; obj.end = ev.end;
       }
     }
+    // Carry id and original for mapping back on click
+    if (typeof ev.id !== 'undefined' && ev.id !== null) obj.id = String(ev.id);
+    obj.extendedProps = { original: ev };
     return obj;
   }
 
@@ -47,6 +50,9 @@
       const when = ev.start ? fmt.format(new Date(ev.start)) : '';
       const where = ev.location ? ' — ' + ev.location : '';
       li.innerHTML = '<time>' + when + '</time><strong>' + (ev.title || '(no title)') + '</strong>' + where;
+      if (typeof ev.id !== 'undefined') li.dataset.id = String(ev.id);
+      li.style.cursor = 'pointer';
+      li.addEventListener('click', () => showDetails(ev));
       ul.appendChild(li);
     }
   }
@@ -57,6 +63,15 @@
       initialView: 'timeGridWeek', height: 700,
       headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek' },
       events: events.map(toFC),
+      eventClick(info) {
+        if (info && info.jsEvent) info.jsEvent.preventDefault();
+        const original = info.event.extendedProps && info.event.extendedProps.original ? info.event.extendedProps.original : null;
+        const ev = original ? { ...original } : { title: info.event.title };
+        if (info.event.start) ev.start = info.event.start.toISOString();
+        if (info.event.end) ev.end = info.event.end.toISOString();
+        ev.allDay = !!info.event.allDay;
+        showDetails(ev);
+      }
     });
     cal.render();
   }
@@ -112,4 +127,52 @@
 
   renderCalendar(events);
   renderList(upcomingCombined);
+
+  // Modal show/hide and formatter
+  function showDetails(ev) {
+    const overlay = document.getElementById('overlay');
+    const modal = document.getElementById('modal');
+    if (!overlay || !modal) return;
+    const fmtDate = new Intl.DateTimeFormat(undefined, { dateStyle: 'full', timeStyle: ev.allDay ? undefined : 'short' });
+    const startText = ev.start ? fmtDate.format(new Date(ev.start)) : '';
+    let endText = '';
+    if (ev.end) {
+      try { endText = fmtDate.format(new Date(ev.end)); } catch {}
+    }
+    const where = ev.location ? '<div style="margin-top:6px"><strong>Location:</strong> ' + escapeHtml(ev.location) + '</div>' : '';
+    const desc = ev.description ? '<div style="margin-top:10px; white-space:pre-wrap">' + linkify(escapeHtml(ev.description)) + '</div>' : '';
+    const when = '<div><strong>When:</strong> ' + startText + (endText && endText !== startText ? ' – ' + endText : '') + '</div>';
+    const header = '<h3 style="margin:0 0 8px">' + (ev.title ? escapeHtml(ev.title) : '(no title)') + '</h3>';
+    const content = header + when + where + desc;
+    // Rebuild modal content but keep Close button at top-right
+    modal.innerHTML = '<button id="close" style="position:absolute;right:8px;top:8px;background:#e2e8f0;border:none;border-radius:6px;padding:6px 10px;cursor:pointer">Close</button>' + content;
+    overlay.style.display = 'block';
+    const closeBtn = document.getElementById('close');
+    if (closeBtn) closeBtn.onclick = hideDetails;
+    overlay.onclick = (e) => { if (e.target === overlay) hideDetails(); };
+    document.addEventListener('keydown', onEscOnce, { once: true });
+    function onEscOnce(e) { if (e.key === 'Escape') hideDetails(); }
+  }
+
+  function hideDetails() {
+    const overlay = document.getElementById('overlay');
+    if (overlay) overlay.style.display = 'none';
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function linkify(text) {
+    const urlRegex = /(https?:\/\/[^\s)]+)|(www\.[^\s)]+)/g;
+    return text.replace(urlRegex, (url) => {
+      const href = url.startsWith('http') ? url : ('https://' + url);
+      return '<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + url + '</a>';
+    });
+  }
 })();
