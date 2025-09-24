@@ -764,11 +764,13 @@ BEGIN:VEVENT
 SUMMARY:Performance: Very First Concerts
 DTSTART;TZID=America/Los_Angeles:20250927T110000
 DTEND;TZID=America/Los_Angeles:20250927T114500
-UID:znip-79@znip.me
-CREATED:20250914T042722Z
-DESCRIPTION:Enjoy an interactive introduction to classical music with the 
- San Francisco Chamber Orchestra. Space limited. For children and their car
- egivers.\nApprox age: 0+
+UID:znip-122@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Very First Concerts are a classical series designed with the y
+ oungest listeners in mind. Each interactive\, 30 minute concert features a
+  central theme\, short selections\, and fun hands-on musical activities ge
+ ared toward families with young children. These are two back-to-back shows
+  at 11a and 11:45a. Space limited. For children and their caregivers.
 LOCATION:Children's Storytelling Room - 2nd Fl\, 100 Larkin Street San Fra
  ncisco \, CA 94102 United States
 END:VEVENT
@@ -776,11 +778,13 @@ BEGIN:VEVENT
 SUMMARY:Performance: Very First Concerts
 DTSTART;TZID=America/Los_Angeles:20250927T114500
 DTEND;TZID=America/Los_Angeles:20250927T123000
-UID:znip-85@znip.me
-CREATED:20250915T221025Z
-DESCRIPTION:Enjoy an interactive introduction to classical music with the 
- San Francisco Chamber Orchestra. Space limited. For children and their car
- egivers.
+UID:znip-123@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Very First Concerts are a classical series designed with the y
+ oungest listeners in mind. Each interactive\, 30 minute concert features a
+  central theme\, short selections and fun hands-on musical activities gear
+ ed toward families with young children. These are two back-to-back shows a
+ t 11a and 11:45a. Space limited. For children and their caregivers.
 LOCATION:Children's Storytelling Room - 2nd Fl\, 100 Larkin Street San Fra
  ncisco \, CA 94102 United States
 END:VEVENT
@@ -844,6 +848,17 @@ DESCRIPTION:Calling all kids and their families! Join us for fun and free
  required at all times. https://sfrecpark.org/calendar.aspx?EID=8028\nAppro
  x age range: 5–12
 LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Family Playtime
+DTSTART;TZID=America/Los_Angeles:20250928T133000
+DTEND;TZID=America/Los_Angeles:20250928T140000
+UID:znip-124@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:For children ages 5 and younger and their caregivers.\nApprox 
+ age range: 0–5
+LOCATION:Parkside Children's Area\, 1200 Taraval Street San Francisco \, C
+ A 94116 United States
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Social: Baby Playtime
@@ -910,6 +925,75 @@ DESCRIPTION:Join Rec and Park for a groundbreaking event at the Tenderloin
 LOCATION:Tenderloin Children's Playground (570 Ellis Street)
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Activity: Mini-Makers
+DTSTART;TZID=America/Los_Angeles:20251002T110000
+DTEND;TZID=America/Los_Angeles:20251002T113000
+UID:znip-125@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:155 Winston Drive San Francisco \, CA 94132 United States Hand
+ s-on maker fun encouraging\, curiosity\, creativity and the use of fine an
+ d gross motor skills. From art projects\, to playdough\, to learning what 
+ floats\, there's a different project every month. For children ages 3 and 
+ younger.\nApprox age range: 0–3
+LOCATION:Merced Patio\, 155 Winston Drive San Francisco \, CA 94132 United
+  States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Saturday Morning Playtime
+DTSTART;TZID=America/Los_Angeles:20251004T103000
+DTEND;TZID=America/Los_Angeles:20251004T123000
+UID:znip-126@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Share toddler friendly toys and games with others. For ages 0
+ –3.\nApprox age range: 0–3
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Performance: Megan Schoenbohm
+DTSTART;TZID=America/Los_Angeles:20251004T110000
+DTEND;TZID=America/Los_Angeles:20251004T120000
+UID:znip-127@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Move your feet to beloved Bay Area children’s musician and B
+ ay Beats artist\, Megan Schoenbohm. Megan Schoenbohm – Facebook Megan Sc
+ hoenbohm – Instagram Megan Schoenbohm – YouTube Megan Schoenbohm – W
+ ebsite Learn more about Tricycle Music Fest at SFPL TMF – Website Learn 
+ more about Bay Beats at SFPL Bay Beats – Website
+LOCATION:Eureka Valley Back Courtyard\, 1 Jose Sarria Court San Francisco 
+ \, CA 94114 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Activity: Make Kaleidoscopes
+DTSTART;TZID=America/Los_Angeles:20251004T140000
+DTEND;TZID=America/Los_Angeles:20251004T150000
+UID:znip-128@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Learn how to make a simple kaleidoscope and see the world in a
+  dazzling new way. For children and their caregivers.
+LOCATION:Excelsior Meeting Room\, 4400 Mission Street San Francisco \, CA 
+ 94112 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social: Group Bike Ride
+DTSTART;TZID=America/Los_Angeles:20251004T140000
+DTEND;TZID=America/Los_Angeles:20251004T153000
+UID:znip-129@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Learn and practice the basics of urban biking with children th
+ rough a fun and easy ride in the Marina. Skilled instructors will give a 3
+ 0-minute introduction to basic group ride etiquette and street riding safe
+ ty\, followed by a roughly hour-long group ride leaving from and returning
+  to the Marina Branch Library. A limited number of bicycles will be availa
+ ble to borrow\, but please bring your own if you have one. E-bikes are wel
+ come. Children who know how to ride or can be carried on a caregiver's bik
+ e are encouraged to participate. Please note: this is not a learn-to-ride 
+ activity. Connect: SF Bicycle Coalition - Instragram | San Francisco Safe 
+ Routes to School - Website
+LOCATION:Marina Back Courtyard\, 1890 Chestnut Street San Francisco \, CA 
+ 94123 United States
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Free Programming in Union Square: Family Sunday Fundays
 DTSTART;TZID=America/Los_Angeles:20251005T110000
 DTEND;TZID=America/Los_Angeles:20251005T140000
@@ -923,6 +1007,44 @@ DESCRIPTION:Calling all kids and their families! Join us for fun and free
 LOCATION:Union Square - Post and Stockton San Francisco CA 94108
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Social: Monday Fun Day Family Dance Party
+DTSTART;TZID=America/Los_Angeles:20251006T100000
+DTEND;TZID=America/Los_Angeles:20251006T110000
+UID:znip-130@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Shake your sillies out to a family-friendly pop playlist with 
+ your family and friends. For children ages 5 and younger.\nApprox age rang
+ e: 0–5
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social: Infant Parent Support Group
+DTSTART;TZID=America/Los_Angeles:20251006T140000
+DTEND;TZID=America/Los_Angeles:20251006T150000
+UID:znip-131@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Share your experience\, ask questions and explore topics such 
+ as the emotional adjustment to parenthood\, infant feeding\, infant moveme
+ nt and development\, sleep strategies and anything else that is on your mi
+ nd. For parents of infants ages 6 weeks–6 months. Facilitated by Marguer
+ ite Gilligan\, a Child'Space Practitioner and Nurse Lactation Consultant. 
+ Gilligan has a special interest in infant movement and development and a p
+ assion for supporting families.\nApprox age range: 0–0
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Swing Into Stories
+DTSTART;TZID=America/Los_Angeles:20251007T093000
+DTEND;TZID=America/Los_Angeles:20251007T120000
+UID:znip-132@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Treat Ave and 26th St San Francisco \, CA 94110 United States 
+ Children's bookmobile service in the park. Outdoor storytime from 10:30–
+ 11:00am. For ages 5 and younger.\nApprox age range: 0–5
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Free Programming in Union Square: Toddler Tuesday
 DTSTART;TZID=America/Los_Angeles:20251007T100000
 DTEND;TZID=America/Los_Angeles:20251007T113000
@@ -933,6 +1055,31 @@ DESCRIPTION:Bring your little ones for interactive and musical activities\
  Together of San Francisco\, and the SF Public Library. https://sfrecpark.o
  rg/calendar.aspx?EID=7809\nApprox age range: 1–3
 LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Performance: Mariela's Music Time
+DTSTART;TZID=America/Los_Angeles:20251007T150000
+DTEND;TZID=America/Los_Angeles:20251007T160000
+UID:znip-133@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:See an exciting\, energetic\, and interactive bilingual perfor
+ mance in Spanish and English filled with rhythms and multicultural sounds\
+ , along with with the rich traditions of the Bay Area. For children 5 and 
+ younger and their families.\nApprox age range: 0–5
+LOCATION:Presidio Meeting Room\, 3150 Sacramento Street San Francisco \, C
+ A 94115 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Activity: Playtime For Families in Japanese/日本語
+DTSTART;TZID=America/Los_Angeles:20251009T110000
+DTEND;TZID=America/Los_Angeles:20251009T113000
+UID:znip-134@znip.me
+CREATED:20250924T222609Z
+DESCRIPTION:Every 2nd and 4th Thursdays. お子さんと日本語でプレ
+ イタイムの場をお届けいたします。毎月第２と第４木
+ 曜日にて。
+LOCATION:Western Addition Meeting Room\, 1550 Scott Street San Francisco \
+ , CA 94115 United States
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Free Programming in Union Square: Family Sunday Fundays
