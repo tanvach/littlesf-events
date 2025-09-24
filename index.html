@@ -4,10 +4,25 @@
 <meta name="description" content="Family-friendly events in San Francisco"/>
 <link rel="icon" href="data:;base64,iVBORw0KGgo="/>
 <link rel="stylesheet" href="/assets/app.css"/>
+<style>
+.modal-overlay{position:fixed;inset:0;background:rgba(15,23,42,.55);display:none;align-items:center;justify-content:center;padding:16px;z-index:1000}
+.modal-overlay.open{display:flex}
+.modal{background:#fff;border-radius:12px;max-width:640px;width:100%;box-shadow:0 10px 30px rgba(2,6,23,.2)}
+.modal-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid #e2e8f0}
+.modal-header h2{margin:0;font-size:20px}
+.modal-close{background:transparent;border:none;font-size:24px;line-height:1;cursor:pointer;color:#334155;padding:4px}
+.modal-body{padding:16px 20px 20px}
+.modal-body p{margin:0 0 12px}
+.modal-body ul{margin:0 0 12px 20px}
+.copy-row{display:flex;gap:8px;align-items:center;margin:12px 0 16px}
+.copy-input{flex:1;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:14px}
+.copy-btn{padding:10px 12px;background:#0ea5e9;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px}
+.small{font-size:14px;color:#475569}
+</style>
 </head><body>
 <header><div class="wrap"><h1>Little SF - Events</h1>
 <nav>
-  <a class="btn" href="/calendar/all.ics">Subscribe (ICS)</a>
+  <a class="btn" id="icsCopyButton" href="/calendar/all.ics">Subscribe (ICS)</a>
   <a class="btn" href="/data/events-all.json">Raw JSON</a>
 </nav></div></header>
 <main class="wrap">
@@ -20,7 +35,67 @@
     <button id="close" style="position:absolute;right:8px;top:8px;background:#e2e8f0;border:none;border-radius:6px;padding:6px 10px;cursor:pointer">Close</button>
   </div>
 </div>
+<div id="subscribeModal" class="modal-overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="subscribeModalTitle">
+    <div class="modal-header">
+      <h2 id="subscribeModalTitle">Subscribe to Little SF calendar</h2>
+      <button class="modal-close" id="subscribeModalClose" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <p><strong>Copied!</strong> The ICS link is on your clipboard. Paste it into your calendar app to subscribe.</p>
+      <div class="copy-row">
+        <input id="icsInput" class="copy-input" type="text" readonly aria-label="ICS calendar URL" />
+        <button id="icsCopyAgain" class="copy-btn" type="button">Copy again</button>
+      </div>
+      <p class="small">Subscribing keeps your calendar updated automatically when new events are added.</p>
+      <ul>
+        <li><strong>Google Calendar</strong>: On desktop, open Google Calendar → left sidebar, select <em>Other calendars</em> → <em>Add</em> → <em>From URL</em>, then paste the link. Video guide: <a href="https://www.youtube.com/watch?v=xGOMsz22XTU" target="_blank" rel="noopener">Watch on YouTube</a>.</li>
+        <li><strong>Apple Calendar</strong> (iPhone, iPad, Mac): Follow Apple’s steps to add a subscribed calendar, then paste the link when prompted. Official guide: <a href="https://support.apple.com/en-us/102301" target="_blank" rel="noopener">Apple support</a>.</li>
+        <li><strong>Outlook (web)</strong>: Open Outlook.com → Calendar → <em>Add calendar</em> → <em>Subscribe from web</em>, then paste the link. Instructions: <a href="https://support.microsoft.com/en-us/office/import-or-subscribe-to-a-calendar-in-outlook-com-or-outlook-on-the-web-cff1429c-5af6-41ec-a5b4-74f2c278e98c" target="_blank" rel="noopener">Microsoft support</a>.</li>
+      </ul>
+    </div>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/rrule@2.7.2/dist/es5/rrule.min.js"></script>
 <script src="/assets/app.js"></script>
+<script>
+  (function(){
+    var openClass = 'open';
+    var modalOverlay = document.getElementById('subscribeModal');
+    var closeBtn = document.getElementById('subscribeModalClose');
+    var copyBtn = document.getElementById('icsCopyButton');
+    var icsUrl = (copyBtn && copyBtn.href) ? copyBtn.href : ((location && location.origin ? location.origin : '') + '/calendar/all.ics');
+    var copyAgainBtn = document.getElementById('icsCopyAgain');
+    var icsInput = document.getElementById('icsInput');
+
+    function copyToClipboard(text){
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        return navigator.clipboard.writeText(text).catch(function(){ fallbackCopy(text); });
+      } else { return fallbackCopy(text); }
+    }
+    function fallbackCopy(text){
+      try{
+        var tmp = document.createElement('textarea');
+        tmp.value = text; tmp.setAttribute('readonly',''); tmp.style.position='fixed'; tmp.style.top='-9999px';
+        document.body.appendChild(tmp); tmp.select(); document.execCommand('copy'); document.body.removeChild(tmp);
+      }catch(e){}
+    }
+    function openModal(){ if(!modalOverlay) return; modalOverlay.classList.add(openClass); modalOverlay.setAttribute('aria-hidden','false'); if(closeBtn) closeBtn.focus(); }
+    function closeModal(){ if(!modalOverlay) return; modalOverlay.classList.remove(openClass); modalOverlay.setAttribute('aria-hidden','true'); }
+
+    if (copyBtn){
+      copyBtn.addEventListener('click', function(e){
+        if (e && e.preventDefault) e.preventDefault();
+        copyToClipboard(icsUrl);
+        if (icsInput) icsInput.value = icsUrl;
+        openModal();
+      });
+    }
+    if (copyAgainBtn){ copyAgainBtn.addEventListener('click', function(){ copyToClipboard(icsUrl); if(icsInput){ icsInput.focus(); icsInput.select(); } }); }
+    if (closeBtn){ closeBtn.addEventListener('click', closeModal); }
+    if (modalOverlay){ modalOverlay.addEventListener('click', function(e){ if(e.target===modalOverlay) closeModal(); }); }
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
+  })();
+</script>
 </body></html>
