@@ -44,10 +44,12 @@
     ul.innerHTML = '';
     if (!events.length) { empty.style.display = 'block'; return; }
     empty.style.display = 'none';
-    const fmt = new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+    const fmtDate = new Intl.DateTimeFormat(undefined, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
+    const fmtDateTime = new Intl.DateTimeFormat(undefined, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
     for (const ev of events.slice(0, 50)) {
       const li = document.createElement('li');
-      const when = ev.start ? fmt.format(new Date(ev.start)) : '';
+      const d = ev.start ? new Date(ev.start) : null;
+      const when = d ? (ev.allDay ? fmtDate.format(d) : fmtDateTime.format(d)) : '';
       const where = ev.location ? ' — ' + ev.location : '';
       li.innerHTML = '<time>' + when + '</time><strong>' + (ev.title || '(no title)') + '</strong>' + where;
       if (typeof ev.id !== 'undefined') li.dataset.id = String(ev.id);
