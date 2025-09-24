@@ -139,10 +139,7 @@
     if (ev.end) {
       try { endText = fmtDate.format(new Date(ev.end)); } catch {}
     }
-    const where = ev.location ? (function(){
-      const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(ev.location);
-      return '<div style="margin-top:6px"><strong>Location:</strong> <a href="' + mapsUrl + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(ev.location) + '</a></div>';
-    })() : '';
+    const where = ev.location ? buildLocationBlock(ev.location) : '';
     const desc = ev.description ? '<div style="margin-top:10px; white-space:pre-wrap">' + linkify(escapeHtml(ev.description)) + '</div>' : '';
     const when = '<div><strong>When:</strong> ' + startText + (endText && endText !== startText ? ' – ' + endText : '') + '</div>';
     const header = '<h3 style="margin:0 0 8px">' + (ev.title ? escapeHtml(ev.title) : '(no title)') + '</h3>';
@@ -177,5 +174,30 @@
       const href = url.startsWith('http') ? url : ('https://' + url);
       return '<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + url + '</a>';
     });
+  }
+
+  function buildLocationBlock(locationText) {
+    const addressHtml = escapeHtml(locationText);
+    const ua = (typeof navigator !== 'undefined' && navigator.userAgent) ? navigator.userAgent : '';
+    const isIOS = /iPad|iPhone|iPod/.test(ua) || (typeof navigator !== 'undefined' && navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const isMac = /Macintosh|Mac OS X/.test(ua);
+    const isApple = isIOS || isMac;
+    const isAndroid = /Android/.test(ua);
+    const appleUrl = 'https://maps.apple.com/?q=' + encodeURIComponent(locationText);
+    const googleUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(locationText);
+
+    let linksHtml = '';
+    if (isApple) {
+      linksHtml = '<a href="' + appleUrl + '" target="_blank" rel="noopener noreferrer">Open in Apple Maps</a> · '
+        + '<a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>';
+    } else if (isAndroid) {
+      linksHtml = '<a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>';
+    } else {
+      linksHtml = '<a href="' + googleUrl + '" target="_blank" rel="noopener noreferrer">Open in Google Maps</a> · '
+        + '<a href="' + appleUrl + '" target="_blank" rel="noopener noreferrer">Open in Apple Maps</a>';
+    }
+
+    return '<div style="margin-top:6px"><strong>Location:</strong> ' + addressHtml
+      + '<div style="margin-top:4px;color:#475569;font-size:14px">' + linksHtml + '</div></div>';
   }
 })();
