@@ -1,44 +1,21 @@
- <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Little SF Events</title>
-      <meta name="description" content="Live event feed for Little SF" />
-      <style>
-        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; color: #0f172a; }
-        header { padding: 20px 24px; background: #f8fafc; }
-        main { padding: 24px; max-width: 1000px; margin: 0 auto; }
-        .actions a { display: inline-block; margin-right: 12px; padding: 8px 12px; background: #0ea5e9; color: white; border-radius: 6px; text-decoration: none; }
-        pre { background: #f1f5f9; padding: 12px; border-radius: 6px; overflow: auto; }
-      </style>
-    </head>
-    <body>
-      <header>
-        <strong>Little SF – Events</strong>
-      </header>
-      <main>
-        <div class="actions">
-          <a href="/calendar/all.ics">Subscribe (ICS)</a>
-          <a href="/data/events-all.json">Raw JSON</a>
-        </div>
-        <p>This page will render the calendar once events are published.</p>
-        <pre id="meta"></pre>
-        <script>
-          (async () => {
-            try {
-              const res = await fetch('/data/events-all.json', { cache: 'no-store' });
-              if (res.ok) {
-                const data = await res.json();
-                document.getElementById('meta').textContent = JSON.stringify({ count: data.length }, null, 2);
-              } else {
-                document.getElementById('meta').textContent = 'No events yet.';
-              }
-            } catch {
-              document.getElementById('meta').textContent = 'No events yet.';
-            }
-          })();
-        </script>
-      </main>
-    </body>
-    </html>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Little SF - Events</title>
+<meta name="description" content="Family-friendly events in San Francisco"/>
+<link rel="icon" href="data:;base64,iVBORw0KGgo="/>
+<link rel="stylesheet" href="/assets/app.css"/>
+</head><body>
+<header><div class="wrap"><h1>Little SF - Events</h1>
+<nav>
+  <a class="btn" href="/calendar/all.ics">Subscribe (ICS)</a>
+  <a class="btn" href="/data/events-all.json">Raw JSON</a>
+</nav></div></header>
+<main class="wrap">
+  <section id="calendar-container"><div id="calendar"></div></section>
+  <section><h2>Upcoming</h2><ul id="list" class="list"></ul>
+    <p id="empty" class="muted" style="display:none">No events yet.</p></section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/rrule@2.7.2/dist/es5/rrule.min.js"></script>
+<script src="/assets/app.js"></script>
+</body></html>
