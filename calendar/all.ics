@@ -1,0 +1,973 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Znip//EN
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:STANDARD
+DTSTART;VALUE=DATE:19700101
+TZNAME:STD
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0800
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART;VALUE=DATE:19700401
+TZNAME:DST
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0700
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:The Whale's Tail Music Lineup
+DTSTART;TZID=America/Los_Angeles:20250830T120000
+DTEND;TZID=America/Los_Angeles:20250830T180000
+UID:znip-19@znip.me
+RRULE:FREQ=DAILY;COUNT=3;BYDAY=SA,SU,MO
+CREATED:20250905T220517Z
+DESCRIPTION:A family- and dog-friendly spot with drinks\, lawn games\, pub
+ lic art\, curated local food trucks\, and live music\, creating a vibrant 
+ weekend destination.
+LOCATION:The Whale's Tail outdoor garden bar in Golden Gate Park (off JFK 
+ Promenade just west of the Rose Garden at the 14th Avenue East Meadow)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Storytime: For Toddlers
+DTSTART;TZID=America/Los_Angeles:20250909T101500
+DTEND;TZID=America/Los_Angeles:20250909T111500
+UID:znip-7@znip.me
+RRULE:FREQ=WEEKLY;BYDAY=TU
+CREATED:20250905T215334Z
+DESCRIPTION:Books\, songs\, movement and more. For toddlers 16 months thro
+ ugh age 2 and their caregivers. Space limited. Tickets available on a firs
+ t come basis at the reference desk starting at 10am.\nApprox age range: 1
+ –2
+LOCATION:Bernal Heights Branch Library (patio\, children's room entrance)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Storytime: For Preschoolers
+DTSTART;TZID=America/Los_Angeles:20250909T110000
+DTEND;TZID=America/Los_Angeles:20250909T120000
+UID:znip-34@znip.me
+RRULE:FREQ=WEEKLY;BYDAY=TU
+CREATED:20250905T221545Z
+DESCRIPTION:Books\, songs\, fingerplays and more for ages 3-5.\nApprox age
+  range: 3–5
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Storytime: For Babies
+DTSTART;TZID=America/Los_Angeles:20250911T101500
+DTEND;TZID=America/Los_Angeles:20250911T111500
+UID:znip-8@znip.me
+RRULE:FREQ=WEEKLY;BYDAY=TH
+CREATED:20250905T215334Z
+DESCRIPTION:Songs\, rhymes and books for infants and their caregivers. Spa
+ ce limited. Tickets available on a first come basis at the reference desk 
+ starting at 10am.\nApprox age range: 0–1
+LOCATION:Bernal Heights Branch Library (outside the children's room door)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mission Community Market – Mission District
+DTSTART;TZID=America/Los_Angeles:20250911T150000
+DTEND;TZID=America/Los_Angeles:20250911T190000
+UID:znip-51@znip.me
+CREATED:20250910T003225Z
+DESCRIPTION:A lively outdoor market with fresh produce\, local vendors\, a
+ nd live music. Fun for all ages — bring the whole family for a weekday o
+ uting.\nApprox age: 0+
+LOCATION:84 Bartlett St\, San Francisco\, CA 94110
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Flower Piano – SF Botanical Garden
+DTSTART;VALUE=DATE:20250912
+DTEND;VALUE=DATE:20250921
+UID:znip-18@znip.me
+CREATED:20250905T220517Z
+DESCRIPTION:Magical outdoor concerts with 12 pianos scattered through the 
+ gardens\, performances for kids\, and surprise sets among the blooms. Free
+  for SF residents\; all ages welcome.\nApprox age: 0+
+LOCATION:1199 9th Ave\, San Francisco\, CA 94122
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Telescope Viewing at Chabot Space & Science Center – Oakland
+DTSTART;TZID=America/Los_Angeles:20250912T073000
+DTEND;TZID=America/Los_Angeles:20250912T223000
+UID:znip-55@znip.me
+CREATED:20250910T205925Z
+DESCRIPTION:Free stargazing on the observatory deck with astronomers. Ages
+  5+\; weather dependent—check before you go.\nApprox age: 5+
+LOCATION:10000 Skyline Blvd.\, Oakland\, CA 94619
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Doodling or Journaling
+DTSTART;TZID=America/Los_Angeles:20250912T163000
+DTEND;TZID=America/Los_Angeles:20250912T173000
+UID:znip-10@znip.me
+CREATED:20250905T215334Z
+DESCRIPTION:Relax and unwind from the day by doodling or journaling your w
+ orries away. Materials provided or bring your own.\nApprox age range: 8–
+ 17
+LOCATION:Bernal Heights Branch Library
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bay Sox Girls Baseball Clinic (Ages 7–10)
+DTSTART;TZID=America/Los_Angeles:20250913T100000
+DTEND;TZID=America/Los_Angeles:20250913T113000
+UID:znip-60@znip.me
+CREATED:20250911T053101Z
+DESCRIPTION:Free clinic for girls of all skill levels to work on baseball 
+ fundamentals this offseason. Session for ages 7–10 on Saturday\, Septemb
+ er 13 from 10 to 11:30 a.m. Equipment provided.\nApprox age range: 7–10
+LOCATION:Bayview/K.C. Jones Playground (5701 3rd Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Summer Birding at North Lake (Children 5–12)
+DTSTART;TZID=America/Los_Angeles:20250913T100000
+DTEND;TZID=America/Los_Angeles:20250913T120000
+UID:znip-27@znip.me
+CREATED:20250905T220517Z
+DESCRIPTION:SF Nature Education volunteers lead a birds walk for children 
+ ages 5–12 (accompanied by a parent or guardian) on Saturday\, September 
+ 13 from 10 a.m. to noon.\nApprox age range: 5–12
+LOCATION:North Lake\, Golden Gate Park (meet at parking area off 43rd Aven
+ ue and Fulton Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mobile Rec at Duboce Park
+DTSTART;TZID=America/Los_Angeles:20250913T100000
+DTEND;TZID=America/Los_Angeles:20250913T160000
+UID:znip-33@znip.me
+CREATED:20250905T221043Z
+DESCRIPTION:Free BMX biking\, skateboarding\, and more. Skateboarding equi
+ pment provided.
+LOCATION:Duboce Park\, Duboce Avenue and Scott Street
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Community Playdate – McKinley Square
+DTSTART;TZID=America/Los_Angeles:20250913T110000
+DTEND;TZID=America/Los_Angeles:20250913T120000
+UID:znip-52@znip.me
+CREATED:20250910T003225Z
+DESCRIPTION:A big neighborhood morning hang with open play\, a craft table
+ \, and a pop-up from @noomoon.shop. Free to attend\, all ages welcome. Fir
+ st 20 guests will take home a Playdate tote!\nApprox age: 0+
+LOCATION:McKinley Square\, 20th St & Vermont St\, San Francisco\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:125th Anniversary Celebration of Duboce Park
+DTSTART;TZID=America/Los_Angeles:20250913T110000
+DTEND;TZID=America/Los_Angeles:20250913T160000
+UID:znip-25@znip.me
+CREATED:20250905T220517Z
+DESCRIPTION:Join the Friends of Duboce Park for its 125th anniversary cele
+ bration on Saturday\, September 13. The day will feature family-friendly a
+ ctivities including a giant obstacle jump house\, dodgeball tournament\, s
+ cavenger hunt\, lawn games\, arts and crafts\, face painting\, live music\
+ , food trucks\, and more. A special photo display will showcase the park's
+  history\, from its role after the 1906 Earthquake to the evolution of the
+  playgrounds and recreation center.\nApprox age: 0+
+LOCATION:Duboce Park (Duboce Avenue and Noe Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Whale's Tail Music Lineup (September 13)
+DTSTART;TZID=America/Los_Angeles:20250913T120000
+DTEND;TZID=America/Los_Angeles:20250913T180000
+UID:znip-56@znip.me
+CREATED:20250911T053101Z
+DESCRIPTION:The Whale's Tail transforms into a vibrant weekend destination
+  with drinks\, lawn games\, public art\, local food trucks and live music.
+  This family- and dog-friendly spot features Donovan Plant\, Pete Kronowit
+ t\, The Alleylots\, and Tyler Ross on Saturday\, September 13 from noon to
+  6 p.m.\nApprox age: 0+
+LOCATION:The Whale's Tail outdoor garden bar\, Golden Gate Park (off the J
+ FK Promenade near 14th Avenue East Meadow)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bay Sox Girls Baseball Clinic (Ages 11–14)
+DTSTART;TZID=America/Los_Angeles:20250913T120000
+DTEND;TZID=America/Los_Angeles:20250913T133000
+UID:znip-61@znip.me
+CREATED:20250911T053104Z
+DESCRIPTION:Free clinic for girls of all skill levels to work on baseball 
+ fundamentals this offseason. Session for ages 11–14 on Saturday\, Septem
+ ber 13 from noon to 1:30 p.m. Equipment provided.\nApprox age range: 11–
+ 14
+LOCATION:Bayview/K.C. Jones Playground (5701 3rd Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Noe Valley Art Festival – Noe Valley Town Square
+DTSTART;TZID=America/Los_Angeles:20250914T100000
+DTEND;TZID=America/Los_Angeles:20250914T160000
+UID:znip-53@znip.me
+CREATED:20250910T003225Z
+DESCRIPTION:A free community art festival with 22 artists\, live music\, p
+ ainting demos\, and hands-on kids' activities. All ages welcome\; great fa
+ mily outing in the heart of Noe.\nApprox age: 0+
+LOCATION:3861 24th St\, San Francisco\, CA 94114
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mobile Rec at Zion Skate Plaza
+DTSTART;TZID=America/Los_Angeles:20250914T100000
+DTEND;TZID=America/Los_Angeles:20250914T160000
+UID:znip-62@znip.me
+CREATED:20250911T053107Z
+DESCRIPTION:Enjoy free BMX biking\, skateboarding and more at Golden Gate 
+ Park’s Mobile Rec. Skateboarding equipment provided. Sunday\, September 
+ 14 from 10 a.m. to 4 p.m.
+LOCATION:Zion Skate Plaza (Waller and Stanyan streets)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Oogubi Sensory Play
+DTSTART;TZID=America/Los_Angeles:20250914T103000
+DTEND;TZID=America/Los_Angeles:20250914T123000
+UID:znip-54@znip.me
+CREATED:20250910T003225Z
+DESCRIPTION:Morning playdate with water play\, sensory setups\, and creati
+ ve activities designed for kids to explore while parents connect. Free for
+  adults\, kids ages 10mo–12yrs welcome (activities safe for 6mo+). Enjoy
+  10% off the beer & wine garden plus exclusive food truck discounts.\nAppr
+ ox age range: 0–12
+LOCATION:601 Mission Bay Blvd North\, San Francisco\, CA 94158
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Whale's Tail Music Lineup (September 14)
+DTSTART;TZID=America/Los_Angeles:20250914T120000
+DTEND;TZID=America/Los_Angeles:20250914T180000
+UID:znip-57@znip.me
+CREATED:20250911T053101Z
+DESCRIPTION:The Whale's Tail transforms into a vibrant weekend destination
+  with drinks\, lawn games\, public art\, local food trucks and live music.
+  This family- and dog-friendly spot features Kevin Coffey\, John Tardiff\,
+  Joe Andrews\, and Tomfoolery on Sunday\, September 14 from noon to 6 p.m.
+ \nApprox age: 0+
+LOCATION:The Whale's Tail outdoor garden bar\, Golden Gate Park (off the J
+ FK Promenade near 14th Avenue East Meadow)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Pre-Soccer Skillbuilding with Super Soccer Stars
+DTSTART;TZID=America/Los_Angeles:20250915T110000
+DTEND;TZID=America/Los_Angeles:20250915T113000
+UID:znip-83@znip.me
+CREATED:20250915T221025Z
+DESCRIPTION:In these parent/caregiver participation classes Super Soccer S
+ tars coaches and puppet friends\, Mimi and Pepe\, take toddlers through a 
+ world of exciting physical activity. Super Soccer Stars use soccer balls t
+ o help children develop soccer skills\, as well as improve self-confidence
+ \, teamwork\, physical literacy\, and socialization skills. For ages 2–3
+ . Space limited. Reservations required: on.sfpl.org/gpasoccer\nApprox age 
+ range: 2–3
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Storytime: For Families at SPARK Social SF
+DTSTART;TZID=America/Los_Angeles:20250915T111500
+DTEND;TZID=America/Los_Angeles:20250915T114500
+UID:znip-35@znip.me
+CREATED:20250905T221545Z
+DESCRIPTION:Books\, songs\, rhymes and fun for children of all ages at SPA
+ RK Social SF\, 601 Mission Bay Boulevard North.
+LOCATION:SPARK Social SF\, 601 Mission Bay Boulevard North
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Pre-Soccer Skillbuilding with Super Soccer Stars
+DTSTART;TZID=America/Los_Angeles:20250915T113000
+DTEND;TZID=America/Los_Angeles:20250915T120000
+UID:znip-63@znip.me
+CREATED:20250914T041228Z
+DESCRIPTION:In these parent/caregiver participation classes Super Soccer S
+ tars coaches and puppet friends\, Mimi and Pepe\, take toddlers through a 
+ world of exciting physical activity. Super Soccer Stars use soccer balls t
+ o help children develop soccer skills\, as well as improve self-confidence
+ \, teamwork\, physical literacy and socialization skills. For ages 3–4. 
+ Space limited. Reservations required: on.sfpl.org/gpasoccer\nApprox age ra
+ nge: 3–4
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Swing Into Stories
+DTSTART;TZID=America/Los_Angeles:20250916T093000
+DTEND;TZID=America/Los_Angeles:20250916T120000
+UID:znip-64@znip.me
+CREATED:20250914T041228Z
+DESCRIPTION:Children's bookmobile service in the park. Outdoor storytime f
+ rom 10:30–11:00am. For children ages 5 and younger.\nApprox age range: 0
+ –5
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social: Quiet Dog Reading Circle
+DTSTART;TZID=America/Los_Angeles:20250916T153000
+DTEND;TZID=America/Los_Angeles:20250916T163000
+UID:znip-65@znip.me
+CREATED:20250914T041228Z
+DESCRIPTION:Read to or pet a SF SPCA-trained therapy dogs at the library. 
+ Read quietly to yourself or a little one\, with a friendly dog in your pre
+ sence.\nApprox age range: 0–12
+LOCATION:Parkside Teen's Area\, 1200 Taraval Street San Francisco \, CA 94
+ 116 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dog Reading Circle
+DTSTART;TZID=America/Los_Angeles:20250916T163000
+DTEND;TZID=America/Los_Angeles:20250916T170000
+UID:znip-11@znip.me
+CREATED:20250905T215334Z
+DESCRIPTION:Practice reading with peers and a certified dog from San Franc
+ isco Society for the Prevention of Cruelty to Animals (SFSPCA) on a monthl
+ y basis.\nApprox age range: 5–12
+LOCATION:Bernal Heights Branch Library
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tilden Tots – Nature Exploration
+DTSTART;TZID=America/Los_Angeles:20250917T103000
+DTEND;TZID=America/Los_Angeles:20250917T113000
+UID:znip-86@znip.me
+CREATED:20250917T003155Z
+DESCRIPTION:Bring your littlest ones to the park for nature activities\, a
+ nimal encounters\, and storytime. Free drop-in program\, no registration r
+ equired.\nApprox age: 0+
+LOCATION:Tilden Nature Area Visitor Center\, Berkeley\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Activity: LEGO and Magna-tiles Free Play
+DTSTART;TZID=America/Los_Angeles:20250917T153000
+DTEND;TZID=America/Los_Angeles:20250917T170000
+UID:znip-66@znip.me
+CREATED:20250914T042721Z
+DESCRIPTION:Build and create with LEGO bricks and mini-figures\, as well a
+ s Magna-Tile blocks. For children and their caregivers.\nApprox age: 0+
+LOCATION:Anza Meeting Room\, 550 37th Avenue San Francisco \, CA 94121 Uni
+ ted States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Workshop: Mola Paper Cutouts
+DTSTART;TZID=America/Los_Angeles:20250918T160000
+DTEND;TZID=America/Los_Angeles:20250918T173000
+UID:znip-67@znip.me
+CREATED:20250914T042721Z
+DESCRIPTION:Learn about the tradition of working with vibrant colors\, pat
+ terns and representational images of the Kuna people of Panama and Columbi
+ a while making a paper mola. For children ages 6 and older. Younger childr
+ en may need adult assistance.\nApprox age: 6+
+LOCATION:Ocean View Meeting Room\, 345 Randolph Street San Francisco \, CA
+  94132 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kindness Festival & Concert in the Park
+DTSTART;TZID=America/Los_Angeles:20250918T180000
+DTEND;TZID=America/Los_Angeles:20250918T200000
+UID:znip-87@znip.me
+CREATED:20250917T003155Z
+DESCRIPTION:Celebrate the International Day of Peace with Mindful Littles'
+  7th Annual Peace & Kindness Carnival. Enjoy live music by Spill the Wine\
+ , themed carnival games\, mindful crafts\, and community service projects.
+  Free\, all ages — bring blankets\, chairs\, and enjoy the food trucks.\
+ nApprox age: 0+
+LOCATION:Orinda Community Center Park\, Orinda\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mobile Rec at Joe DiMaggio Playground
+DTSTART;TZID=America/Los_Angeles:20250920T100000
+DTEND;TZID=America/Los_Angeles:20250920T160000
+UID:znip-97@znip.me
+CREATED:20250918T054507Z
+DESCRIPTION:Mobile Rec kicks off the fall season at Joe DiMaggio Playgroun
+ d (651 Lombard Street) on Saturday\, September 20 from 10 a.m. to 4 p.m. E
+ njoy free BMX biking\, skateboarding and more. Skateboarding equipment wil
+ l be provided.\nApprox age: 0+
+LOCATION:Joe DiMaggio Playground (651 Lombard Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Saturday Morning Playtime
+DTSTART;TZID=America/Los_Angeles:20250920T103000
+DTEND;TZID=America/Los_Angeles:20250920T123000
+UID:znip-68@znip.me
+CREATED:20250914T042721Z
+DESCRIPTION:Share toddler friendly toys and games with others at this open
+  play activity. For ages 0–3.\nApprox age range: 0–3
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Access to Adventure at Crissy Field Center
+DTSTART;TZID=America/Los_Angeles:20250920T110000
+DTEND;TZID=America/Los_Angeles:20250920T150000
+UID:znip-58@znip.me
+CREATED:20250911T053101Z
+DESCRIPTION:Come out for Access to Adventure\, a free community event desi
+ gned for families of children and youth with disabilities\, on Saturday\, 
+ September 20 from 11 a.m. to 3 p.m. Meet at Crissy Field Center (603 Mason
+  Street) and learn about inclusive recreation and after-school and summer 
+ programs available in San Francisco while exploring the Presidio of San Fr
+ ancisco's Tunnel Tops. Connect with other families and staff from Support 
+ For Families Of Children With Disabilities and Rec and Park's Therapeutic 
+ Recreation and Inclusion Services.\nApprox age: 0+
+LOCATION:Crissy Field Center (603 Mason Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mid-Autumn Harvest Festival
+DTSTART;TZID=America/Los_Angeles:20250920T113000
+DTEND;TZID=America/Los_Angeles:20250920T160000
+UID:znip-92@znip.me
+CREATED:20250918T054507Z
+DESCRIPTION:The Mid-Autumn Harvest Festival returns to Tenderloin Recreati
+ on Center (570 Ellis Street) on Saturday\, September 20 from 11:30 a.m. to
+  4 p.m. This free annual event is a celebration of Southeast Asian art and
+  culture. It will feature live music\, arts and crafts\, food samples\, pa
+ paya salad demonstrations\, a lantern parade and a soccer tournament for a
+ ll ages.\nApprox age: 0+
+LOCATION:Tenderloin Recreation Center (570 Ellis Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Activity: Octoplay
+DTSTART;TZID=America/Los_Angeles:20250920T114500
+DTEND;TZID=America/Los_Angeles:20250920T010000
+UID:znip-69@znip.me
+CREATED:20250914T042721Z
+DESCRIPTION:Create a structure using large colorful slotted pieces as buil
+ ding blocks. For ages 6 and younger.\nApprox age range: 0–6
+LOCATION:Excelsior Meeting Room\, 4400 Mission Street San Francisco \, CA 
+ 94112 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Autumn Abundance Well-Being Fair
+DTSTART;TZID=America/Los_Angeles:20250920T120000
+DTEND;TZID=America/Los_Angeles:20250920T170000
+UID:znip-93@znip.me
+CREATED:20250918T054507Z
+DESCRIPTION:Rec and Park's Harvey Milk Center for the Arts (50 Scott Stree
+ t)\, in partnership with Mukunda Studio and Tendwell Collective\, will hos
+ t the 12th seasonal Autumn Abundance Well-Being Fair on Saturday\, Septemb
+ er 20 from noon to 5 p.m. This free\, all-ages event features 30 local pra
+ ctitioners—including teachers\, coaches\, therapists\, artists\, and Har
+ vey Milk Center instructors—offering classes\, healing sessions\, conver
+ sation circles\, art and writing activations\, and more.\nApprox age: 0+
+LOCATION:Harvey Milk Center for the Arts (50 Scott Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:King of the Streets – Lowrider Parade & Car Show
+DTSTART;TZID=America/Los_Angeles:20250920T140000
+DTEND;TZID=America/Los_Angeles:20250920T200000
+UID:znip-88@znip.me
+CREATED:20250917T003155Z
+DESCRIPTION:Celebrate lowrider culture with a massive parade\, hopping com
+ petition\, and a car show at 24th & Mission. Free\, all ages — expect cr
+ owds\, music\, and vibrant community energy.\nApprox age: 0+
+LOCATION:Mission Street (between Cesar Chavez & 17th Street) and 24th & Mi
+ ssion\, San Francisco\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free "Big Hero 6" Screening at Union Square
+DTSTART;TZID=America/Los_Angeles:20250920T193000
+DTEND;TZID=America/Los_Angeles:20250920T203000
+UID:znip-59@znip.me
+CREATED:20250911T053101Z
+DESCRIPTION:Come out for Cinema on the Square\, a series of three free San
+  Francisco-themed movies in Union Square Plaza (333 Post Street). The seco
+ nd screening in this series\, presented in partnership with Alamo Drafthou
+ se Cinema\, takes place on Saturday\, September 20 featuring "Big Hero 6."
+  Pre-show fun\, hosted by SFFilm\, starts at 5:30 p.m. with hands-on art a
+ ctivities from The Walt Disney Family Museum. Test your trivia skills befo
+ re the 7:30 p.m. screening for a chance to win prizes from Alamo Drafthous
+ e and the Westin St. Francis.\nApprox age: 0+
+LOCATION:Union Square Plaza (333 Post Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Civic Center Scholastic Chess Tournament
+DTSTART;TZID=America/Los_Angeles:20250921T100000
+DTEND;TZID=America/Los_Angeles:20250921T140000
+UID:znip-94@znip.me
+CREATED:20250918T054507Z
+DESCRIPTION:Join the Civic Center Community Benefit District and Mechanics
+ ' Institute for a youth chess tournament in UN Plaza (Market and Hyde stre
+ ets) on Sunday\, September 21 from 10 a.m. to 2 p.m. The USCF-rated and no
+ n-rated event is open to all players through 12th grade. Test your skills 
+ against Grandmaster Sam Shankland in a simultaneous exhibition\; sign-ups 
+ for the simul will be on site.\nApprox age range: 0–18
+LOCATION:UN Plaza (Market and Hyde streets)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Programming in Union Square: Family Sunday Fundays
+DTSTART;TZID=America/Los_Angeles:20250921T110000
+DTEND;TZID=America/Los_Angeles:20250921T140000
+UID:znip-108@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Calling all kids and their families! Join us for fun and free 
+ drop-in S.T.E.A.M. activities led by Maker Studio Kidz and/or local museum
+ s. Activities geared towards kids aged 5 – 12. Caretaker supervision is 
+ required at all times. https://sfrecpark.org/calendar.aspx?EID=8027\nAppro
+ x age range: 5–12
+LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sunday Streets – Western Addition
+DTSTART;TZID=America/Los_Angeles:20250921T120000
+DTEND;TZID=America/Los_Angeles:20250921T160000
+UID:znip-89@znip.me
+CREATED:20250917T003155Z
+DESCRIPTION:Experience the neighborhood car-free with live music\, family 
+ activities\, and community connection. Free\, all ages — stroll\, bike\,
+  and play in the open streets.\nApprox age: 0+
+LOCATION:O'Farrell Street between Steiner & Fillmore\, San Francisco\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mobile Rec at Sunday Streets Western Addition
+DTSTART;TZID=America/Los_Angeles:20250921T120000
+DTEND;TZID=America/Los_Angeles:20250921T160000
+UID:znip-98@znip.me
+CREATED:20250918T054507Z
+DESCRIPTION:Mobile Rec will be providing archery for Sunday Streets Wester
+ n Addition on Sunday\, September 21 from noon to 4 p.m. Enjoy free BMX bik
+ ing\, skateboarding and more.\nApprox age: 0+
+LOCATION:Sunday Streets Western Addition
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Activity: Create with Nature
+DTSTART;TZID=America/Los_Angeles:20250921T150000
+DTEND;TZID=America/Los_Angeles:20250921T160000
+UID:znip-70@znip.me
+CREATED:20250914T042721Z
+DESCRIPTION:Discover your love of nature with this open-ended natural loos
+ e parts play event designed to inspire curiosity\, creativity\, connection
+  to the natural world and to each other. For children and their families.\
+ nApprox age: 0+
+LOCATION:Sunset Program Room\, 1305 18th Avenue San Francisco \, CA 94122 
+ United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social: Monday Fun Day Family Dance Party
+DTSTART;TZID=America/Los_Angeles:20250922T100000
+DTEND;TZID=America/Los_Angeles:20250922T110000
+UID:znip-71@znip.me
+CREATED:20250914T042721Z
+DESCRIPTION:Shake your sillies out to a family-friendly pop playlist with 
+ your family and friends. For children ages 5 and younger.\nApprox age rang
+ e: 0–5
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Workshop: Super Soccer Stars
+DTSTART;TZID=America/Los_Angeles:20250922T103000
+DTEND;TZID=America/Los_Angeles:20250922T110000
+UID:znip-84@znip.me
+CREATED:20250915T221025Z
+DESCRIPTION:In these parent/caregiver-participation* sample classes\, Supe
+ r Soccer Stars coaches and puppet friends\, Mimi and Pepe\, take toddlers 
+ through a world of exciting physical activities. For children ages 1–2 a
+ nd their caregivers. Super Soccer Stars coaches use soccer balls to help c
+ hildren develop soccer skills as well as improve self-confidence\, teamwor
+ k\, physical literacy and socialization skills. Space limited. Reservation
+  required: tinyurl.com/y7kmbchj . If you have already attended a class\, p
+ lease leave space for others to join in a sample class. *Parent/Caregiver 
+ and Child Participation class - adults are required to assist their child 
+ throughout class.\nApprox age range: 1–2
+LOCATION:West Portal Front Courtyard\, 190 Lenox Way San Francisco \, CA 9
+ 4127 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Workshop: Super Soccer Stars
+DTSTART;TZID=America/Los_Angeles:20250922T110000
+DTEND;TZID=America/Los_Angeles:20250922T113000
+UID:znip-72@znip.me
+CREATED:20250914T042721Z
+DESCRIPTION:In these parent/caregiver-participation* sample classes\, Supe
+ r Soccer Stars coaches and puppet friends\, Mimi and Pepe\, take toddlers 
+ through a world of exciting physical activities. For children ages 2–3 a
+ nd their caregivers. Super Soccer Stars coaches use soccer balls to help c
+ hildren develop soccer skills as well as improve self-confidence\, teamwor
+ k\, physical literacy and socialization skills. Space limited. Reservation
+  required: tinyurl.com/y7kmbchj . If you have already attended a class\, p
+ lease leave space for others to join in a sample class. *Parent/Caregiver 
+ and Child Participation class - adults are required to assist their child 
+ throughout class.\nApprox age range: 2–3
+LOCATION:West Portal Front Courtyard\, 190 Lenox Way San Francisco \, CA 9
+ 4127 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social: Infant Parent Support Group
+DTSTART;TZID=America/Los_Angeles:20250922T140000
+DTEND;TZID=America/Los_Angeles:20250922T150000
+UID:znip-73@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Share your experience\, ask questions and explore topics such 
+ as the emotional adjustment to parenthood\, infant feeding\, infant moveme
+ nt and development\, sleep strategies and anything else that is on your mi
+ nd. For parents of infants ages 6 weeks–6 months. Facilitated by Marguer
+ ite Gilligan\, a Child'Space Practitioner and Nurse Lactation Consultant. 
+ Gilligan has a special interest in infant movement and development and a p
+ assion for supporting families.\nApprox age range: 0–0
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Library on the Promenade
+DTSTART;TZID=America/Los_Angeles:20250922T160000
+DTEND;TZID=America/Los_Angeles:20250922T190000
+UID:znip-111@znip.me
+CREATED:20250919T223319Z
+DESCRIPTION:​​​​​​The San Francisco Public Library invites you
+  to visit the Bookmobile at the JFK Promenade. Every Monday through Septem
+ ber 29\, you can find the library on wheels at the corner of JFK Promenade
+  and Conservatory Drive\, west of the Conservatory of Flowers\, from 4 to 
+ 7 p.m. https://sfrecpark.org/calendar.aspx?EID=8747\nApprox age range: 0
+ –12
+LOCATION:JFK Promenade - John F. Kennedy Promenade San Francisco CA 94118
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Swing Into Stories
+DTSTART;TZID=America/Los_Angeles:20250923T093000
+DTEND;TZID=America/Los_Angeles:20250923T120000
+UID:znip-74@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:200 John F Shelley Dr McLaren Park San Francisco \, CA 94134 U
+ nited States Children's bookmobile service in the park. Outdoor storytime 
+ from 10:30–11:00am. For children ages 5 and younger.\nApprox age range: 
+ 0–5
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Programming in Union Square: Toddler Tuesday
+DTSTART;TZID=America/Los_Angeles:20250923T100000
+DTEND;TZID=America/Los_Angeles:20250923T113000
+UID:znip-107@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Bring your little ones for interactive and musical activities\
+ , led on a rotating basis by Happily Ever Laughter\, JAMaROO Kids\, Music 
+ Together of San Francisco\, and the SF Public Library. https://sfrecpark.o
+ rg/calendar.aspx?EID=7807\nApprox age range: 1–3
+LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Workshop: Once Upon an Opera\, The Monkey King with Puppeteer Ramo
+ n Abad
+DTSTART;TZID=America/Los_Angeles:20250924T103000
+DTEND;TZID=America/Los_Angeles:20250924T113000
+UID:znip-75@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Puppeteer Ramon Abad will lead a family-friendly demonstration
+  of the styles of puppets used in San Francisco Opera's world premiere pro
+ duction of The Monkey King \, by Huang Ruo and Henry Daivid Hwang. Bring y
+ our creativity and openness to make several puppets move and come to life\
+ , together. For children and their caregivers. Connect: San Francisco Oper
+ a - Website\nApprox age: 0+
+LOCATION:Sunset Children's Area\, 1305 18th Avenue San Francisco \, CA 941
+ 22 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Rooftop Jazz – Salesforce Park
+DTSTART;TZID=America/Los_Angeles:20250924T113000
+DTEND;TZID=America/Los_Angeles:20250924T133000
+UID:znip-116@znip.me
+CREATED:20250924T003210Z
+DESCRIPTION:Free live jazz by local Bay Area musicians\, perfect for lunch
+ -break or stroller walk-in outings. Family-friendly vibe\; bring a blanket
+ \, snacks\, or picnic. Outdoor seating + greenery.\nApprox age: 0+
+LOCATION:Salesforce Park (Main Plaza)\, 425 Mission St\, San Francisco\, C
+ A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Garden Playdate – Melrose Branch
+DTSTART;TZID=America/Los_Angeles:20250925T103000
+DTEND;TZID=America/Los_Angeles:20250925T120000
+UID:znip-117@znip.me
+CREATED:20250924T003210Z
+DESCRIPTION:Outdoor open-play time in the garden & patio\; for ages 0-5. E
+ nglish & Español. Free\, just drop in. Great morning garden-stroll + play
+  time.\nApprox age range: 0–5
+LOCATION:Melrose Branch Library\, Melrose Branch Garden & Patio\, San Fran
+ cisco\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Activity: Playtime For Families in Japanese/日本語
+DTSTART;TZID=America/Los_Angeles:20250925T110000
+DTEND;TZID=America/Los_Angeles:20250925T113000
+UID:znip-76@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Every 2nd and 4th Thursdays. お子さんと日本語でプレ
+ イタイムの場をお届けいたします。毎月第２と第４木
+ 曜日にて。
+LOCATION:Western Addition Meeting Room\, 1550 Scott Street San Francisco \
+ , CA 94115 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Fall Open Studios – 1890 Bryant
+DTSTART;VALUE=DATE:20250926
+DTEND;VALUE=DATE:20250928
+UID:znip-118@znip.me
+CREATED:20250924T003210Z
+DESCRIPTION:Dozens of artist studios open\; kid-friendly browsing and demo
+ s. Free entry\; stroller-friendly building.\nApprox age: 0+
+LOCATION:1890 Bryant St Studios\, 1890 Bryant St\, San Francisco\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Clancy's Pumpkin Patch – Sunset District
+DTSTART;TZID=America/Los_Angeles:20250926T090000
+DTEND;TZID=America/Los_Angeles:20250926T210000
+UID:znip-119@znip.me
+CREATED:20250924T003210Z
+DESCRIPTION:San Francisco's classic family pumpkin patch returns with pump
+ kins\, gourds\, corn stalks\, a hay maze\, and festive photo ops. Free adm
+ ission\; pumpkins for purchase.\nApprox age: 0+
+LOCATION:Clancy's Pumpkin Patch\, 2101 Sloat Blvd\, San Francisco\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Chinatown Autumn Moon Festival – Chinatown
+DTSTART;VALUE=DATE:20250927
+DTEND;VALUE=DATE:20250928
+UID:znip-121@znip.me
+CREATED:20250924T003210Z
+DESCRIPTION:Dragon dance parade\, live music\, food stalls\, kids crafts. 
+ Free\, family-friendly street fair.\nApprox age: 0+
+LOCATION:Chinatown (Grant Ave & Bush St)\, San Francisco\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Big San Francisco Play Date
+DTSTART;TZID=America/Los_Angeles:20250927T100000
+DTEND;TZID=America/Los_Angeles:20250927T120000
+UID:znip-77@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Play\, learn and explore with OctoPlay\, a sticky table\, Twig
+  Toys and more. For ages 5 and younger and their caregivers. Big San Franc
+ isco Play Date provides families with young children the opportunity to en
+ gage in accessible activities that promote growth and exploration in a saf
+ e and welcoming environment. Geared for children ages 0–5\, we welcome c
+ aregivers and older siblings to play along with them. Big Play Date encour
+ ages side-by-side play\, choice\, turn-taking and making new friends for c
+ hildren while providing their grown-ups an opportunity to learn about the 
+ importance of play.\nApprox age range: 0–5
+LOCATION:Visitacion Valley Meeting Room\, 201 Leland Avenue San Francisco 
+ \, CA 94134 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:City Kids Family Fair – Children's Council SF
+DTSTART;TZID=America/Los_Angeles:20250927T100000
+DTEND;TZID=America/Los_Angeles:20250927T130000
+UID:znip-120@znip.me
+CREATED:20250924T003210Z
+DESCRIPTION:Free community fair with games\, activities\, free books\, dia
+ pers\, fresh produce\, and early education resources. Doors open 9:45am. F
+ ree admission\; tickets here.\nApprox age: 0+
+LOCATION:Children's Council of San Francisco\, 445 Church St\, San Francis
+ co\, CA 94114
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Saturday Morning Playtime
+DTSTART;TZID=America/Los_Angeles:20250927T103000
+DTEND;TZID=America/Los_Angeles:20250927T123000
+UID:znip-78@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Share toddler friendly toys and games with others at this open
+  play activity. For ages 0–3.\nApprox age range: 0–3
+LOCATION:Glen Park Meeting Room\, 2825 Diamond Street San Francisco \, CA 
+ 94131 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Performance: Very First Concerts
+DTSTART;TZID=America/Los_Angeles:20250927T110000
+DTEND;TZID=America/Los_Angeles:20250927T114500
+UID:znip-79@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Enjoy an interactive introduction to classical music with the 
+ San Francisco Chamber Orchestra. Space limited. For children and their car
+ egivers.\nApprox age: 0+
+LOCATION:Children's Storytelling Room - 2nd Fl\, 100 Larkin Street San Fra
+ ncisco \, CA 94102 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Performance: Very First Concerts
+DTSTART;TZID=America/Los_Angeles:20250927T114500
+DTEND;TZID=America/Los_Angeles:20250927T123000
+UID:znip-85@znip.me
+CREATED:20250915T221025Z
+DESCRIPTION:Enjoy an interactive introduction to classical music with the 
+ San Francisco Chamber Orchestra. Space limited. For children and their car
+ egivers.
+LOCATION:Children's Storytelling Room - 2nd Fl\, 100 Larkin Street San Fra
+ ncisco \, CA 94102 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:All the Way Live Hip Hop Dance Festival
+DTSTART;TZID=America/Los_Angeles:20250927T120000
+DTEND;TZID=America/Los_Angeles:20250927T180000
+UID:znip-96@znip.me
+CREATED:20250918T054507Z
+DESCRIPTION:Join All the Way Live Foundation at Fulton Plaza (Fulton Stree
+ t between Larkin and Hyde streets) for its Hip Hop Dance Festival on Satur
+ day\, September 27 from noon to 6 p.m. This free event will feature dance 
+ competitions with prize money\, as well as local artists\, kids' activitie
+ s\, food trucks\, vendor market\, live DJs and more!\nApprox age: 0+
+LOCATION:Fulton Plaza (Fulton Street between Larkin and Hyde streets)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Early Learning: Arabic Story Hour
+DTSTART;TZID=America/Los_Angeles:20250927T140000
+DTEND;TZID=America/Los_Angeles:20250927T150000
+UID:znip-80@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Special guest Radwa presents stories and songs in Arabic and E
+ nglish\, followed by a fun activity. For children and their caregivers.\nA
+ pprox age: 0+
+LOCATION:Children's Creative Center - 2nd Fl\, 100 Larkin Street San Franc
+ isco \, CA 94102 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social: Family Dance Party
+DTSTART;TZID=America/Los_Angeles:20250927T160000
+DTEND;TZID=America/Los_Angeles:20250927T170000
+UID:znip-81@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Dance to funky family-friendly jams and be silly with your lit
+ tle one. For children and their caregivers.\nApprox age: 0+
+LOCATION:Bernal Heights Meeting Room\, 500 Cortland Avenue San Francisco \
+ , CA 94110 United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KPSF Open Family Day
+DTSTART;TZID=America/Los_Angeles:20250928T100000
+DTEND;TZID=America/Los_Angeles:20250928T110000
+UID:znip-95@znip.me
+CREATED:20250918T054507Z
+DESCRIPTION:Family day at the Kunal Patel San Francisco Open finals on Sep
+ tember 28 kicks off at 10 a.m. There will be on-court tennis games for age
+ s 4+\, and off-court fun including a balloon artist\, glitter tattoos\, ca
+ ricatures\, face-painting\, a free gift and more.\nApprox age: 4+
+LOCATION:Goldman Tennis Center (50 Bowling Green Drive)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Programming in Union Square: Family Sunday Fundays
+DTSTART;TZID=America/Los_Angeles:20250928T110000
+DTEND;TZID=America/Los_Angeles:20250928T140000
+UID:znip-106@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Calling all kids and their families! Join us for fun and free 
+ drop-in S.T.E.A.M. activities led by Maker Studio Kidz and/or local museum
+ s. Activities geared towards kids aged 5 – 12. Caretaker supervision is 
+ required at all times. https://sfrecpark.org/calendar.aspx?EID=8028\nAppro
+ x age range: 5–12
+LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Social: Baby Playtime
+DTSTART;TZID=America/Los_Angeles:20250928T150000
+DTEND;TZID=America/Los_Angeles:20250928T160000
+UID:znip-82@znip.me
+CREATED:20250914T042722Z
+DESCRIPTION:Meet other neighborhood families with babies at this special p
+ laytime. We will have a book giveaway and refreshments as well! For babies
+  ages 0–18 months and their caregivers.\nApprox age range: 0–1
+LOCATION:Sunset Program Room\, 1305 18th Avenue San Francisco \, CA 94122 
+ United States
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kids Day in the Park
+DTSTART;TZID=America/Los_Angeles:20250929T110000
+DTEND;TZID=America/Los_Angeles:20250929T160000
+UID:znip-90@znip.me
+CREATED:20250917T003155Z
+DESCRIPTION:A festival of creativity & fun with live music\, face painting
+ \, bouncy houses\, exhibits\, and food trucks! Tickets required.
+LOCATION:Plaza de César Chávez\, San Jose\, CA
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Library on the Promenade
+DTSTART;TZID=America/Los_Angeles:20250929T160000
+DTEND;TZID=America/Los_Angeles:20250929T190000
+UID:znip-110@znip.me
+CREATED:20250919T223319Z
+DESCRIPTION:​​​​​​The San Francisco Public Library invites you
+  to visit the Bookmobile at the JFK Promenade. Every Monday through Septem
+ ber 29\, you can find the library on wheels at the corner of JFK Promenade
+  and Conservatory Drive\, west of the Conservatory of Flowers\, from 4 to 
+ 7 p.m. https://sfrecpark.org/calendar.aspx?EID=8748\nApprox age range: 0
+ –12
+LOCATION:JFK Promenade - John F. Kennedy Promenade San Francisco CA 94118
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Programming in Union Square: Toddler Tuesday
+DTSTART;TZID=America/Los_Angeles:20250930T100000
+DTEND;TZID=America/Los_Angeles:20250930T113000
+UID:znip-105@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Bring your little ones for interactive and musical activities\
+ , led on a rotating basis by Happily Ever Laughter\, JAMaROO Kids\, Music 
+ Together of San Francisco\, and the SF Public Library. https://sfrecpark.o
+ rg/calendar.aspx?EID=7808\nApprox age range: 1–3
+LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tenderloin Children's Playground Groundbreaking
+DTSTART;TZID=America/Los_Angeles:20251001T093000
+DTEND;TZID=America/Los_Angeles:20251001T103000
+UID:znip-91@znip.me
+CREATED:20250918T054507Z
+DESCRIPTION:Join Rec and Park for a groundbreaking event at the Tenderloin
+  Children's Playground (570 Ellis Street) on Wednesday\, October 1 at 9:30
+  a.m. The celebration marks the beginning of a new era for this popular ne
+ ighborhood play space\, which will transform into a nature-based\, multi-f
+ unctional space that balances active play\, nature exploration\, and quiet
+  relaxation. The project is a partnership with KaBOOM!\, the Mimi and Pete
+ r Haas Fund\, Crankstart\, CalFire\, Wu Yee Children's Services\, SF Child
+ ren & Nature\, and the Low Income Investment Fund.\nApprox age: 0+
+LOCATION:Tenderloin Children's Playground (570 Ellis Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Programming in Union Square: Family Sunday Fundays
+DTSTART;TZID=America/Los_Angeles:20251005T110000
+DTEND;TZID=America/Los_Angeles:20251005T140000
+UID:znip-104@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Calling all kids and their families! Join us for fun and free 
+ drop-in S.T.E.A.M. activities led by Maker Studio Kidz and/or local museum
+ s. Activities geared towards kids aged 5 – 12. Caretaker supervision is 
+ required at all times. https://sfrecpark.org/calendar.aspx?EID=8029\nAppro
+ x age range: 5–12
+LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Programming in Union Square: Toddler Tuesday
+DTSTART;TZID=America/Los_Angeles:20251007T100000
+DTEND;TZID=America/Los_Angeles:20251007T113000
+UID:znip-103@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Bring your little ones for interactive and musical activities\
+ , led on a rotating basis by Happily Ever Laughter\, JAMaROO Kids\, Music 
+ Together of San Francisco\, and the SF Public Library. https://sfrecpark.o
+ rg/calendar.aspx?EID=7809\nApprox age range: 1–3
+LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Programming in Union Square: Family Sunday Fundays
+DTSTART;TZID=America/Los_Angeles:20251012T110000
+DTEND;TZID=America/Los_Angeles:20251012T140000
+UID:znip-102@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Calling all kids and their families! Join us for fun and free 
+ drop-in S.T.E.A.M. activities led by Maker Studio Kidz and/or local museum
+ s. Activities geared towards kids aged 5 – 12. Caretaker supervision is 
+ required at all times. https://sfrecpark.org/calendar.aspx?EID=8030\nAppro
+ x age range: 5–12
+LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Free Programming in Union Square: Toddler Tuesday
+DTSTART;TZID=America/Los_Angeles:20251014T100000
+DTEND;TZID=America/Los_Angeles:20251014T113000
+UID:znip-101@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Bring your little ones for interactive and musical activities\
+ , led on a rotating basis by Happily Ever Laughter\, JAMaROO Kids\, Music 
+ Together of San Francisco\, and the SF Public Library. https://sfrecpark.o
+ rg/calendar.aspx?EID=7810\nApprox age range: 1–3
+LOCATION:Union Square - Post and Stockton San Francisco CA 94108
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Scaregrove Halloween Event
+DTSTART;TZID=America/Los_Angeles:20251024T150000
+DTEND;TZID=America/Los_Angeles:20251024T210000
+UID:znip-100@znip.me
+CREATED:20250919T214723Z
+DESCRIPTION:Spooky Halloween Fun at Sigmund Stern Grove https://sfrecpark.
+ org/calendar.aspx?EID=8820\nApprox age range: 0–12
+LOCATION:Sigmund Stern Grove - 19th Avenue and Sloat Boulevard San Francis
+ co CA 94132
+END:VEVENT
+END:VCALENDAR
