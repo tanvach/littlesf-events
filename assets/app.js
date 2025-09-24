@@ -143,7 +143,8 @@
     const desc = ev.description ? '<div style="margin-top:10px; white-space:pre-wrap">' + linkify(escapeHtml(ev.description)) + '</div>' : '';
     const when = '<div><strong>When:</strong> ' + startText + (endText && endText !== startText ? ' – ' + endText : '') + '</div>';
     const header = '<h3 style="margin:0 0 8px">' + (ev.title ? escapeHtml(ev.title) : '(no title)') + '</h3>';
-    const content = header + when + where + desc;
+    const mapSlot = ev.location ? '<div id="map-slot" style="margin-top:12px"></div>' : '';
+    const content = header + when + where + desc + mapSlot;
     // Rebuild modal content but keep Close button at top-right
     modal.innerHTML = '<button id="close" style="position:absolute;right:8px;top:8px;background:#e2e8f0;border:none;border-radius:6px;padding:6px 10px;cursor:pointer">Close</button>' + content;
     overlay.style.display = 'block';
@@ -152,6 +153,15 @@
     overlay.onclick = (e) => { if (e.target === overlay) hideDetails(); };
     document.addEventListener('keydown', onEscOnce, { once: true });
     function onEscOnce(e) { if (e.key === 'Escape') hideDetails(); }
+
+    // Lazy-render a small map if we have a location
+    if (ev.location) {
+      const slot = modal.querySelector('#map-slot');
+      if (slot) {
+        slot.innerHTML = '<div class="muted">Loading map…</div>';
+        renderLocationMap(ev.location, slot);
+      }
+    }
   }
 
   function hideDetails() {
@@ -174,5 +184,72 @@
       const href = url.startsWith('http') ? url : ('https://' + url);
       return '<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + url + '</a>';
     });
+  }
+
+  // Geocode and embed a lightweight OpenStreetMap iframe (no heavy JS deps)
+  async function renderLocationMap(locationText, slotEl) {
+    const trimmed = String(locationText || '').trim();
+    if (!trimmed) { slotEl.innerHTML = ''; return; }
+    const cached = getGeocodeFromCache(trimmed);
+    if (cached) {
+      slotEl.innerHTML = buildMapEmbedHtml(cached.lat, cached.lon, trimmed);
+      return;
+    }
+    try {
+      const params = new URLSearchParams({ format: 'jsonv2', q: trimmed, limit: '1', addressdetails: '0' });
+      const res = await fetch('https://nominatim.openstreetmap.org/search?' + params.toString(), {
+        headers: { 'Accept': 'application/json' },
+      });
+      if (!res.ok) throw new Error('geocode failed');
+      const data = await res.json();
+      if (Array.isArray(data) && data.length && data[0].lat && data[0].lon) {
+        const lat = parseFloat(data[0].lat);
+        const lon = parseFloat(data[0].lon);
+        saveGeocodeToCache(trimmed, lat, lon);
+        slotEl.innerHTML = buildMapEmbedHtml(lat, lon, trimmed);
+      } else {
+        slotEl.innerHTML = buildMapFallbackHtml(trimmed);
+      }
+    } catch {
+      slotEl.innerHTML = buildMapFallbackHtml(trimmed);
+    }
+  }
+
+  function buildMapEmbedHtml(lat, lon, queryLabel) {
+    const delta = 0.01; // ~1.1km latitude delta
+    const minLon = (lon - delta).toFixed(5);
+    const minLat = (lat - delta).toFixed(5);
+    const maxLon = (lon + delta).toFixed(5);
+    const maxLat = (lat + delta).toFixed(5);
+    const bbox = encodeURIComponent(minLon + ',' + minLat + ',' + maxLon + ',' + maxLat);
+    const embedUrl = 'https://www.openstreetmap.org/export/embed.html?bbox=' + bbox + '&layer=mapnik&marker=' + encodeURIComponent(lat + ',' + lon);
+    const viewUrl = 'https://www.openstreetmap.org/?mlat=' + encodeURIComponent(lat) + '&mlon=' + encodeURIComponent(lon) + '#map=15/' + encodeURIComponent(lat) + '/' + encodeURIComponent(lon);
+    const osmLink = '<div style="margin-top:6px"><a href="' + viewUrl + '" target="_blank" rel="noopener noreferrer">Open in OpenStreetMap</a></div>';
+    return '<div style="border:1px solid #e2e8f0;border-radius:8px;overflow:hidden">\
+<iframe title="Map for ' + escapeHtml(queryLabel) + '" width="100%" height="260" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="' + embedUrl + '"></iframe></div>' + osmLink;
+  }
+
+  function buildMapFallbackHtml(query) {
+    const searchUrl = 'https://www.openstreetmap.org/search?query=' + encodeURIComponent(query);
+    return '<div class="muted">Could not load map.</div><div style="margin-top:6px"><a href="' + searchUrl + '" target="_blank" rel="noopener noreferrer">Search this location on OpenStreetMap</a></div>';
+  }
+
+  function getGeocodeFromCache(query) {
+    try {
+      const raw = localStorage.getItem('geo:' + query);
+      if (!raw) return null;
+      const obj = JSON.parse(raw);
+      if (!obj || typeof obj.lat !== 'number' || typeof obj.lon !== 'number') return null;
+      const maxAgeMs = 1000 * 60 * 60 * 24 * 30; // 30 days
+      if (obj.ts && (Date.now() - obj.ts) > maxAgeMs) return null;
+      return obj;
+    } catch { return null; }
+  }
+
+  function saveGeocodeToCache(query, lat, lon) {
+    try {
+      const obj = { lat: Number(lat), lon: Number(lon), ts: Date.now() };
+      localStorage.setItem('geo:' + query, JSON.stringify(obj));
+    } catch {}
   }
 })();
