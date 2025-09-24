@@ -60,8 +60,10 @@
   function renderCalendar(events) {
     const el = document.getElementById('calendar');
     const cal = new FullCalendar.Calendar(el, {
-      initialView: 'timeGridWeek', height: 700,
+      initialView: (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) ? 'dayGridMonth' : 'timeGridWeek',
+      height: (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) ? 'auto' : 700,
       headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek' },
+      buttonText: { today: 'today', month: 'month', week: 'week' },
       events: events.map(toFC),
       eventClick(info) {
         if (info && info.jsEvent) info.jsEvent.preventDefault();

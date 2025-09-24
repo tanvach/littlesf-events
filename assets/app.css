@@ -12,3 +12,17 @@ main { padding: 20px 0 40px; }
 .list li { padding:10px 4px; border-bottom:1px solid #e2e8f0; }
 .list time { color: var(--muted); margin-right:8px; }
 .muted { color: var(--muted); }
+
+@media (max-width: 640px) {
+  header .wrap { display:flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  h1 { font-size: 18px; }
+  nav .btn { margin: 4px 6px 0 0; padding: 8px 10px; font-size: 14px; }
+  #calendar { padding: 4px; }
+  /* FullCalendar toolbar responsiveness */
+  .fc .fc-toolbar { flex-wrap: wrap; row-gap: 6px; }
+  .fc .fc-toolbar .fc-toolbar-chunk { width: 100%; display: flex; justify-content: space-between; }
+  .fc .fc-toolbar-title { font-size: 16px; line-height: 1.2; }
+  .fc .fc-button { padding: 4px 8px; font-size: 12px; }
+  .fc .fc-button-group { display:flex; width: 100%; }
+  .fc .fc-button-group .fc-button { flex: 1 1 0; }
+}
