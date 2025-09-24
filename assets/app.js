@@ -54,7 +54,7 @@
   function renderCalendar(events) {
     const el = document.getElementById('calendar');
     const cal = new FullCalendar.Calendar(el, {
-      initialView: 'dayGridMonth', height: 700,
+      initialView: 'timeGridWeek', height: 700,
       headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek' },
       events: events.map(toFC),
     });
@@ -63,6 +63,53 @@
 
   const events = await fetchEvents();
   events.sort((a,b) => ((a.start||'').localeCompare(b.start||'') || (a.id||0) - (b.id||0)));
+
+  // Build upcoming list (today forward), including next occurrence for recurring events
+  const now = new Date();
+  const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+  function isNonRecurringUpcoming(ev) {
+    if (!ev.start && !ev.end) return false;
+    const start = ev.start ? new Date(ev.start) : null;
+    const end = ev.end ? new Date(ev.end) : null;
+    if (ev.allDay) {
+      if (end) {
+        const endInclusive = new Date(end);
+        if (/^\d{4}-\d{2}-\d{2}$/.test(ev.end)) {
+          endInclusive.setHours(23,59,59,999);
+        }
+        return endInclusive >= startOfToday;
+      }
+      return start ? start >= startOfToday : false;
+    }
+    if (start && start >= startOfToday) return true;
+    if (start && end && start < now && end >= now) return true;
+    return false;
+  }
+
+  function nextOccurrenceFromRRule(ev) {
+    if (!ev.rrule || typeof window.RRule === 'undefined') return null;
+    try {
+      const opts = window.RRule.parseString(ev.rrule);
+      if (ev.start) opts.dtstart = new Date(ev.start);
+      const rule = new window.RRule(opts);
+      const next = rule.after(startOfToday, true);
+      if (!next) return null;
+      return { ...ev, start: next.toISOString() };
+    } catch {
+      return null;
+    }
+  }
+
+  const nonRecurringUpcoming = events.filter(ev => !ev.rrule).filter(isNonRecurringUpcoming);
+  const recurringNexts = events
+    .filter(ev => !!ev.rrule)
+    .map(nextOccurrenceFromRRule)
+    .filter(Boolean);
+
+  const upcomingCombined = [...nonRecurringUpcoming, ...recurringNexts]
+    .sort((a,b) => ((a.start||'').localeCompare(b.start||'') || (a.id||0) - (b.id||0)));
+
   renderCalendar(events);
-  renderList(events);
+  renderList(upcomingCombined);
 })();
