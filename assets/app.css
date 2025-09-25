@@ -12,6 +12,7 @@ main { padding: 20px 0 40px; }
 .list { list-style:none; padding:0; margin:12px 0 0; }
 .list li { padding:10px 4px; border-bottom:1px solid #e2e8f0; }
 .list time { color: var(--muted); margin-right:8px; }
+.list strong { font-weight:700; }
 .muted { color: var(--muted); }
 
 @media (max-width: 640px) {
