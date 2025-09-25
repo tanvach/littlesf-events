@@ -600,18 +600,15 @@ LOCATION:Glen Park Library Meeting Room\, 2825 Diamond Street San Francisc
  o \, CA 94131 United States
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Library on the Promenade
+SUMMARY:Library on the JFK Promenade
 DTSTART;TZID=America/Los_Angeles:20250922T160000
 DTEND;TZID=America/Los_Angeles:20250922T190000
 UID:znip-111@znip.me
+RRULE:FREQ=WEEKLY;BYDAY=MO
 CREATED:20250919T223319Z
-DESCRIPTION:​​​​​​The San Francisco Public Library invites you
-  to visit the Bookmobile at the JFK Promenade. Every Monday through Septem
- ber 29\, you can find the library on wheels at the corner of JFK Promenade
-  and Conservatory Drive\, west of the Conservatory of Flowers\, from 4 to 
- 7 p.m. https://sfrecpark.org/calendar.aspx?EID=8747\nApprox age range: 0
- –12
-LOCATION:JFK Promenade - John F. Kennedy Promenade San Francisco CA 94118
+DESCRIPTION:Library on the JFK Promenade every Monday from 4 to 7 p.m.\nAp
+ prox age range: 0–12
+LOCATION:JFK Promenade
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Early Learning: Swing Into Stories
@@ -710,6 +707,18 @@ DESCRIPTION:San Francisco's classic family pumpkin patch returns with pump
 LOCATION:Clancy's Pumpkin Patch\, 2101 Sloat Blvd\, San Francisco\, CA
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Storytime in Francisco Park
+DTSTART;TZID=America/Los_Angeles:20250926T103000
+DTEND;TZID=America/Los_Angeles:20250926T111500
+UID:znip-136@znip.me
+CREATED:20250925T053004Z
+DESCRIPTION:Join the Francisco Park Conservancy for a storytime at the Fra
+ ncisco Park (Bay and Larkin streets) main lawn on Friday\, September 26 fr
+ om 10:30 to 11:15 a.m. Bring your little ones along with a blanket and a s
+ nack.
+LOCATION:Francisco Park (Bay and Larkin streets)
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Chinatown Autumn Moon Festival – Chinatown
 DTSTART;VALUE=DATE:20250927
 DTEND;VALUE=DATE:20250928
@@ -750,6 +759,16 @@ LOCATION:Children's Council of San Francisco\, 445 Church St\, San Francis
  co\, CA 94114
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Mobile Rec
+DTSTART;TZID=America/Los_Angeles:20250927T100000
+DTEND;TZID=America/Los_Angeles:20250927T160000
+UID:znip-140@znip.me
+CREATED:20250925T053004Z
+DESCRIPTION:Mobile Rec at Hamilton Recreation Center (1900 Geary Boulevard
+ ) on Saturday\, September 27 from 10 a.m. to 4 p.m.
+LOCATION:Hamilton Recreation Center (1900 Geary Boulevard)
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Early Learning: Saturday Morning Playtime
 DTSTART;TZID=America/Los_Angeles:20250927T103000
 DTEND;TZID=America/Los_Angeles:20250927T123000
@@ -775,6 +794,35 @@ LOCATION:Children's Storytelling Room - 2nd Fl\, 100 Larkin Street San Fra
  ncisco \, CA 94102 United States
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Share Your Input on Sunset Dunes: Survey & Open House
+DTSTART;TZID=America/Los_Angeles:20250927T110000
+DTEND;TZID=America/Los_Angeles:20250927T130000
+UID:znip-135@znip.me
+CREATED:20250925T053004Z
+DESCRIPTION:Open house on Saturday\, September 27 from 11 a.m. to 1 p.m. a
+ t Sunset Dunes and Taraval Street. It will feature live music\, activities
+  such as Zumba and trivia\, giveaways\, and an opportunity to help shape t
+ he future of the park. RSVP for the open house at this link. For translati
+ on\, language or accessibility services\, contact Pete Moore at pete.j.moo
+ re@sfgov.org or (415) 496-6204. For more information\, click the link belo
+ w.
+LOCATION:Sunset Dunes and Taraval Street
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Upper Noe Block Party
+DTSTART;TZID=America/Los_Angeles:20250927T110000
+DTEND;TZID=America/Los_Angeles:20250927T140000
+UID:znip-137@znip.me
+CREATED:20250925T053004Z
+DESCRIPTION:Join the Friends of Upper Noe Recreation Center (295 Day Stree
+ t)\, Upper Noe Neighbors and the Friends of Upper Noe Dog Owners Group for
+  their Upper Noe Block Party on Saturday\, September 27 from 11 a.m. to 2 
+ p.m. There will be music\, food\, children's activities\, recreational act
+ ivities\, and more. For more information\, click the link below.\nApprox a
+ ge: 0+
+LOCATION:Upper Noe Recreation Center (295 Day Street)
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Performance: Very First Concerts
 DTSTART;TZID=America/Los_Angeles:20250927T114500
 DTEND;TZID=America/Los_Angeles:20250927T123000
@@ -789,7 +837,7 @@ LOCATION:Children's Storytelling Room - 2nd Fl\, 100 Larkin Street San Fra
  ncisco \, CA 94102 United States
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:All the Way Live Hip Hop Dance Festival
+SUMMARY:All the Way Live's Hip Hop Dance Festival
 DTSTART;TZID=America/Los_Angeles:20250927T120000
 DTEND;TZID=America/Los_Angeles:20250927T180000
 UID:znip-96@znip.me
@@ -798,8 +846,23 @@ DESCRIPTION:Join All the Way Live Foundation at Fulton Plaza (Fulton Stree
  t between Larkin and Hyde streets) for its Hip Hop Dance Festival on Satur
  day\, September 27 from noon to 6 p.m. This free event will feature dance 
  competitions with prize money\, as well as local artists\, kids' activitie
- s\, food trucks\, vendor market\, live DJs and more!\nApprox age: 0+
+ s\, food trucks\, vendor market\, live DJs and more! For more information 
+ and to RSVP\, click the link below.\nApprox age: 0+
 LOCATION:Fulton Plaza (Fulton Street between Larkin and Hyde streets)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lights in Paintings Workshop at Harvey Milk Center for the Arts
+DTSTART;TZID=America/Los_Angeles:20250927T133000
+DTEND;TZID=America/Los_Angeles:20250927T150000
+UID:znip-139@znip.me
+CREATED:20250925T053004Z
+DESCRIPTION:Join the Harvey Milk Center for the Arts (50 Scott Street) for
+  its workshop on how to bring light and color into your artwork on Saturda
+ y\, September 27 from 1:30 to 3 p.m. The class\, designed for ages 12 to 1
+ 7\, will guide students through using acrylics to add brightness\, shadows
+ \, and depth while exploring how light shapes what we see. For more inform
+ ation and to sign up\, click the link below.\nApprox age range: 12–17
+LOCATION:Harvey Milk Center for the Arts (50 Scott Street)
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Early Learning: Arabic Story Hour
@@ -883,20 +946,6 @@ DESCRIPTION:A festival of creativity & fun with live music\, face painting
 LOCATION:Plaza de César Chávez\, San Jose\, CA
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Library on the Promenade
-DTSTART;TZID=America/Los_Angeles:20250929T160000
-DTEND;TZID=America/Los_Angeles:20250929T190000
-UID:znip-110@znip.me
-CREATED:20250919T223319Z
-DESCRIPTION:​​​​​​The San Francisco Public Library invites you
-  to visit the Bookmobile at the JFK Promenade. Every Monday through Septem
- ber 29\, you can find the library on wheels at the corner of JFK Promenade
-  and Conservatory Drive\, west of the Conservatory of Flowers\, from 4 to 
- 7 p.m. https://sfrecpark.org/calendar.aspx?EID=8748\nApprox age range: 0
- –12
-LOCATION:JFK Promenade - John F. Kennedy Promenade San Francisco CA 94118
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Free Programming in Union Square: Toddler Tuesday
 DTSTART;TZID=America/Los_Angeles:20250930T100000
 DTEND;TZID=America/Los_Angeles:20250930T113000
@@ -919,9 +968,11 @@ DESCRIPTION:Join Rec and Park for a groundbreaking event at the Tenderloin
   a.m. The celebration marks the beginning of a new era for this popular ne
  ighborhood play space\, which will transform into a nature-based\, multi-f
  unctional space that balances active play\, nature exploration\, and quiet
-  relaxation. The project is a partnership with KaBOOM!\, the Mimi and Pete
- r Haas Fund\, Crankstart\, CalFire\, Wu Yee Children's Services\, SF Child
- ren & Nature\, and the Low Income Investment Fund.\nApprox age: 0+
+  relaxation. The project is a partnership with KABOOM!\, the Mimi and Pete
+ r Haas Fund\, Crankstart\, Wu Yee Children's Services\, CalFire\, San Fran
+ cisco Children and Nature\, the Low Income Investment Fund and the Departm
+ ent of Early Childhood. For more information\, click the link below.\nAppr
+ ox age: 0+
 LOCATION:Tenderloin Children's Playground (570 Ellis Street)
 END:VEVENT
 BEGIN:VEVENT
@@ -994,6 +1045,26 @@ LOCATION:Marina Back Courtyard\, 1890 Chestnut Street San Francisco \, CA
  94123 United States
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Autumn Moon Festival Twilight Celebration
+DTSTART;TZID=America/Los_Angeles:20251004T173000
+DTEND;TZID=America/Los_Angeles:20251004T193000
+UID:znip-141@znip.me
+CREATED:20250925T053004Z
+DESCRIPTION:Autumn Moon Festival Twilight Celebration at Sunset Dunes and 
+ Irving Street on Saturday\, October 4 from 5:30 to 7:30 p.m.
+LOCATION:Sunset Dunes and Irving Street
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Movie Night at Duboce Park: "Coco"
+DTSTART;TZID=America/Los_Angeles:20251004T190000
+DTEND;TZID=America/Los_Angeles:20251004T200000
+UID:znip-138@znip.me
+CREATED:20250925T053004Z
+DESCRIPTION:Movie Night at Duboce Park (Duboce Avenue and Noe Street) feat
+ uring "Coco" on Saturday\, October 4 beginning at 7 p.m.
+LOCATION:Duboce Park (Duboce Avenue and Noe Street)
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Free Programming in Union Square: Family Sunday Fundays
 DTSTART;TZID=America/Los_Angeles:20251005T110000
 DTEND;TZID=America/Los_Angeles:20251005T140000
@@ -1043,6 +1114,15 @@ CREATED:20250924T222609Z
 DESCRIPTION:Treat Ave and 26th St San Francisco \, CA 94110 United States 
  Children's bookmobile service in the park. Outdoor storytime from 10:30–
  11:00am. For ages 5 and younger.\nApprox age range: 0–5
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jose Coronado Futsal League Registration Opens
+DTSTART;TZID=America/Los_Angeles:20251007T100000
+DTEND;TZID=America/Los_Angeles:20251007T110000
+UID:znip-142@znip.me
+CREATED:20250925T053004Z
+DESCRIPTION:Jose Coronado Futsal League registration opens on Tuesday\, Oc
+ tober 7 at 10 a.m.
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Free Programming in Union Square: Toddler Tuesday
