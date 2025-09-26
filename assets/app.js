@@ -1,4 +1,25 @@
 (async () => {
+  function expandRecurringForCalendar(events) {
+    if (typeof window.RRule === 'undefined') return [];
+    const out = [];
+    const now = new Date();
+    const startRange = new Date(now.getFullYear(), now.getMonth(), 1);
+    const endRange = new Date(now.getFullYear(), now.getMonth() + 3, 0);
+    for (const ev of events) {
+      try {
+        const opts = window.RRule.parseString(ev.rrule);
+        if (ev.start) opts.dtstart = new Date(ev.start);
+        const rule = new window.RRule(opts);
+        const occs = rule.between(startRange, endRange, true);
+        for (const dt of occs) {
+          const inst = { ...ev, start: dt.toISOString(), rrule: null };
+          out.push(inst);
+        }
+      } catch {}
+    }
+    return out;
+  }
+
   const api = { json: '/data/events-all.json' };
 
   async function fetchEvents() {
@@ -81,6 +102,7 @@
   }
 
   const events = await fetchEvents();
+  const eventsForCalendar = (() => { const non = events.filter(ev => !ev.rrule); const rec = events.filter(ev => !!ev.rrule); const expanded = expandRecurringForCalendar(rec); return [...non, ...expanded]; })();
   events.sort((a,b) => ((a.start||'').localeCompare(b.start||'') || (a.id||0) - (b.id||0)));
 
   // Build upcoming list (today forward), including next occurrence for recurring events
@@ -129,7 +151,7 @@
   const upcomingCombined = [...nonRecurringUpcoming, ...recurringNexts]
     .sort((a,b) => ((a.start||'').localeCompare(b.start||'') || (a.id||0) - (b.id||0)));
 
-  renderCalendar(events);
+  renderCalendar(eventsForCalendar);
   renderList(upcomingCombined);
 
   // Modal show/hide and formatter
