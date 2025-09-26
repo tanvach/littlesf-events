@@ -17,6 +17,159 @@ TZOFFSETTO:-0700
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
+SUMMARY:Yerba Buena Center for the Arts – Free Admission
+DTSTART;VALUE=DATE:20250101
+DTEND;VALUE=DATE:20250101
+UID:znip-186@znip.me
+RRULE:FREQ=WEEKLY;UNTIL=20251231T235959;BYDAY=WE
+CREATED:20250926T191940Z
+DESCRIPTION:FREE Wednesdays & Second Sundays. Multidisciplinary art center
+  featuring exhibitions\, performances\, film/video and rotating exhibits f
+ ocusing on contemporary and emerging artists. Free entries may require adv
+ ance reservation and are subject to change. Please check https://sf.funche
+ ap.com/city-guide/monthly-free-museum-days/ or the museum website for late
+ st updates.\nApprox age: 0+
+LOCATION:Yerba Buena Center for the Arts – 3rd and Mission\, San Francis
+ co – BART: Powell Street
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:SFMOMA – Free Admission
+DTSTART;VALUE=DATE:20250102
+DTEND;VALUE=DATE:20250102
+UID:znip-162@znip.me
+RRULE:FREQ=MONTHLY;UNTIL=20251231T235959;BYDAY=TH;BYSETPOS=1
+CREATED:20250926T191940Z
+DESCRIPTION:FREE First Thursdays (Bay Area residents only). From noon to 8
+  pm on the first Thursday of every month\, Bay Area residents can enjoy SF
+ MOMA's galleries and related events for free. Tickets and event details be
+ come available about two weeks in advance\; online reservation is highly e
+ ncouraged. Free entries may require advance reservation and are subject to
+  change. Please check https://sf.funcheap.com/city-guide/monthly-free-muse
+ um-days/ or the museum website for latest updates.\nApprox age: 0+
+LOCATION:SFMOMA – 151 Third Street\, San Francisco
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Legion of Honor – Free Admission
+DTSTART;VALUE=DATE:20250104
+DTEND;VALUE=DATE:20250104
+UID:znip-146@znip.me
+RRULE:FREQ=WEEKLY;UNTIL=20251231T235959;BYDAY=SA
+CREATED:20250926T191940Z
+DESCRIPTION:FREE Every Saturday (for Bay Area residents w/ valid ID). Spec
+ ial exhibition surcharges may apply. Free entries may require advance rese
+ rvation and are subject to change. Please check https://sf.funcheap.com/ci
+ ty-guide/monthly-free-museum-days/ or the museum website for latest update
+ s.\nApprox age: 0+
+LOCATION:Legion of Honor – 100 34th Ave\, San Francisco
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:de Young Museum – Free Admission
+DTSTART;VALUE=DATE:20250104
+DTEND;VALUE=DATE:20250104
+UID:znip-148@znip.me
+RRULE:FREQ=WEEKLY;UNTIL=20251231T235959;BYDAY=SA
+CREATED:20250926T191940Z
+DESCRIPTION:FREE Every Saturday (for Bay Area residents w/ valid ID). Free
+  admission to permanent galleries only. Special exhibition fees may apply.
+  Free entries may require advance reservation and are subject to change. P
+ lease check https://sf.funcheap.com/city-guide/monthly-free-museum-days/ o
+ r the museum website for latest updates.\nApprox age: 0+
+LOCATION:de Young Museum – 50 Hagiwara Tea Garden Drive\, Golden Gate Pa
+ rk\, San Francisco
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Asian Art Museum – Free Admission
+DTSTART;VALUE=DATE:20250105
+DTEND;VALUE=DATE:20250105
+UID:znip-144@znip.me
+RRULE:FREQ=MONTHLY;UNTIL=20251231T235959;BYDAY=SU;BYSETPOS=1
+CREATED:20250926T191940Z
+DESCRIPTION:Free admission to the permanent galleries every first Sunday (
+ except for holidays) from 10 am to 5 pm. Special collection surcharges may
+  apply. Free entries may require advance reservation and are subject to ch
+ ange. Please check https://sf.funcheap.com/city-guide/monthly-free-museum-
+ days/ or the museum website for latest updates.\nApprox age: 0+
+LOCATION:Asian Art Museum – 200 Larkin Street\, San Francisco – BART: 
+ Civic Center
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Oakland Museum of California – Free Admission
+DTSTART;VALUE=DATE:20250105
+DTEND;VALUE=DATE:20250105
+UID:znip-161@znip.me
+RRULE:FREQ=MONTHLY;UNTIL=20251231T235959;BYDAY=SU;BYSETPOS=1
+CREATED:20250926T191940Z
+DESCRIPTION:FREE First Sundays. Additional fee of $6 might be required for
+  optional admission to special exhibitions in the Great Hall. “First” 
+ Sundays date sometimes move a week due to major holidays. Free entries may
+  require advance reservation and are subject to change. Please check https
+ ://sf.funcheap.com/city-guide/monthly-free-museum-days/ or the museum webs
+ ite for latest updates.\nApprox age: 0+
+LOCATION:Oakland Museum of California – 1000 Oak Street\, Oakland – BA
+ RT: Lake Merritt
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Legion of Honor – Free Admission
+DTSTART;VALUE=DATE:20250107
+DTEND;VALUE=DATE:20250107
+UID:znip-145@znip.me
+RRULE:FREQ=MONTHLY;UNTIL=20251231T235959;BYDAY=TU;BYSETPOS=1
+CREATED:20250926T191940Z
+DESCRIPTION:FREE First Tuesdays (for everyone). Special exhibition surchar
+ ges may apply. Free entries may require advance reservation and are subjec
+ t to change. Please check https://sf.funcheap.com/city-guide/monthly-free-
+ museum-days/ or the museum website for latest updates.\nApprox age: 0+
+LOCATION:Legion of Honor – 100 34th Ave\, San Francisco
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:de Young Museum – Free Admission
+DTSTART;VALUE=DATE:20250107
+DTEND;VALUE=DATE:20250107
+UID:znip-147@znip.me
+RRULE:FREQ=MONTHLY;UNTIL=20251231T235959;BYDAY=TU;BYSETPOS=1
+CREATED:20250926T191940Z
+DESCRIPTION:FREE First Tuesdays (for everyone). Free admission to permanen
+ t galleries only. Special exhibition fees may apply. Free entries may requ
+ ire advance reservation and are subject to change. Please check https://sf
+ .funcheap.com/city-guide/monthly-free-museum-days/ or the museum website f
+ or latest updates.\nApprox age: 0+
+LOCATION:de Young Museum – 50 Hagiwara Tea Garden Drive\, Golden Gate Pa
+ rk\, San Francisco
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Yerba Buena Center for the Arts – Free Admission
+DTSTART;VALUE=DATE:20250112
+DTEND;VALUE=DATE:20250112
+UID:znip-187@znip.me
+RRULE:FREQ=MONTHLY;UNTIL=20251231T235959;BYDAY=SU;BYSETPOS=2
+CREATED:20250926T191940Z
+DESCRIPTION:FREE Wednesdays & Second Sundays. Multidisciplinary art center
+  featuring exhibitions\, performances\, film/video and rotating exhibits f
+ ocusing on contemporary and emerging artists. Free entries may require adv
+ ance reservation and are subject to change. Please check https://sf.funche
+ ap.com/city-guide/monthly-free-museum-days/ or the museum website for late
+ st updates.\nApprox age: 0+
+LOCATION:Yerba Buena Center for the Arts – 3rd and Mission\, San Francis
+ co – BART: Powell Street
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:GLBT Historical Society Museum – Free Admission
+DTSTART;VALUE=DATE:20250507
+DTEND;VALUE=DATE:20250507
+UID:znip-184@znip.me
+RRULE:FREQ=MONTHLY;UNTIL=20251231T235959;BYDAY=WE;BYSETPOS=1
+CREATED:20250926T191940Z
+DESCRIPTION:FREE First Wednesday. The GLBT Historical Society Museum is fr
+ ee to all visitors on the first Wednesday of every month. Tickets are not 
+ available online on free days\; all visitors will be welcomed on a first-c
+ ome\, first-served basis as long as there is capacity. Free entries may re
+ quire advance reservation and are subject to change. Please check https://
+ sf.funcheap.com/city-guide/monthly-free-museum-days/ or the museum website
+  for latest updates.\nApprox age: 0+
+LOCATION:GLBT Historical Society Museum – 4127 18th Street\, San Francis
+ co – Castro District
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:The Whale's Tail Music Lineup
 DTSTART;TZID=America/Los_Angeles:20250830T120000
 DTEND;TZID=America/Los_Angeles:20250830T180000
@@ -65,17 +218,6 @@ DESCRIPTION:Songs\, rhymes and books for infants and their caregivers. Spa
 LOCATION:Bernal Heights Branch Library (outside the children's room door)
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Mission Community Market – Mission District
-DTSTART;TZID=America/Los_Angeles:20250911T150000
-DTEND;TZID=America/Los_Angeles:20250911T190000
-UID:znip-51@znip.me
-CREATED:20250910T003225Z
-DESCRIPTION:A lively outdoor market with fresh produce\, local vendors\, a
- nd live music. Fun for all ages — bring the whole family for a weekday o
- uting.\nApprox age: 0+
-LOCATION:84 Bartlett St\, San Francisco\, CA 94110
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Flower Piano – SF Botanical Garden
 DTSTART;VALUE=DATE:20250912
 DTEND;VALUE=DATE:20250921
@@ -95,17 +237,6 @@ CREATED:20250910T205925Z
 DESCRIPTION:Free stargazing on the observatory deck with astronomers. Ages
   5+\; weather dependent—check before you go.\nApprox age: 5+
 LOCATION:10000 Skyline Blvd.\, Oakland\, CA 94619
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Doodling or Journaling
-DTSTART;TZID=America/Los_Angeles:20250912T163000
-DTEND;TZID=America/Los_Angeles:20250912T173000
-UID:znip-10@znip.me
-CREATED:20250905T215334Z
-DESCRIPTION:Relax and unwind from the day by doodling or journaling your w
- orries away. Materials provided or bring your own.\nApprox age range: 8–
- 17
-LOCATION:Bernal Heights Branch Library
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Bay Sox Girls Baseball Clinic (Ages 7–10)
@@ -191,6 +322,20 @@ DESCRIPTION:Free clinic for girls of all skill levels to work on baseball
  ber 13 from noon to 1:30 p.m. Equipment provided.\nApprox age range: 11–
  14
 LOCATION:Bayview/K.C. Jones Playground (5701 3rd Street)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:SFMOMA – Free Admission
+DTSTART;VALUE=DATE:20250914
+DTEND;VALUE=DATE:20250914
+UID:znip-165@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:FREE Family Day (requires one visitor 18 and under). Admission
+  is free for up to four adults accompanying one child or teen. Reserve you
+ r free tickets when available. Free entries may require advance reservatio
+ n and are subject to change. Please check https://sf.funcheap.com/city-gui
+ de/monthly-free-museum-days/ or the museum website for latest updates.\nAp
+ prox age range: 0–18
+LOCATION:SFMOMA – 151 Third Street\, San Francisco
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Noe Valley Art Festival – Noe Valley Town Square
@@ -976,6 +1121,20 @@ DESCRIPTION:Join Rec and Park for a groundbreaking event at the Tenderloin
 LOCATION:Tenderloin Children's Playground (570 Ellis Street)
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:BAMPFA Berkeley Art Museum – Free Admission
+DTSTART;VALUE=DATE:20251002
+DTEND;VALUE=DATE:20251002
+UID:znip-176@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:FREE First Thursdays. Galleries free for all on the first Thur
+ sday of each month. Open 11am to 7pm. Free entries may require advance res
+ ervation and are subject to change. Please check https://sf.funcheap.com/c
+ ity-guide/monthly-free-museum-days/ or the museum website for latest updat
+ es.\nApprox age: 0+
+LOCATION:BAMPFA Berkeley Art Museum – 2155 Center Street\, Berkeley – 
+ BART: Downtown Berkeley
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Activity: Mini-Makers
 DTSTART;TZID=America/Los_Angeles:20251002T110000
 DTEND;TZID=America/Los_Angeles:20251002T113000
@@ -1162,6 +1321,20 @@ LOCATION:Western Addition Meeting Room\, 1550 Scott Street San Francisco \
  , CA 94115 United States
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Museum of the African Diaspora (MoAD) – Free Admission
+DTSTART;VALUE=DATE:20251011
+DTEND;VALUE=DATE:20251011
+UID:znip-158@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:Tentative free day (pending MoAD has reopened in time). The Mu
+ seum of the African Diaspora (MoAD) offers free entry for “Thrive @ MoAD
+  Community Day”. Free entries may require advance reservation and are su
+ bject to change. Please check https://sf.funcheap.com/city-guide/monthly-f
+ ree-museum-days/ or the museum website for latest updates.\nApprox age: 0+
+LOCATION:Museum of the African Diaspora (MoAD) – 685 Mission St (at 3rd)
+ \, San Francisco (Ground floor of the St. Regis)
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Free Programming in Union Square: Family Sunday Fundays
 DTSTART;TZID=America/Los_Angeles:20251012T110000
 DTEND;TZID=America/Los_Angeles:20251012T140000
@@ -1196,5 +1369,17 @@ DESCRIPTION:Spooky Halloween Fun at Sigmund Stern Grove https://sfrecpark.
  org/calendar.aspx?EID=8820\nApprox age range: 0–12
 LOCATION:Sigmund Stern Grove - 19th Avenue and Sloat Boulevard San Francis
  co CA 94132
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The 5th Annual Great Hauntway
+DTSTART;TZID=America/Los_Angeles:20251026T130000
+DTEND;TZID=America/Los_Angeles:20251026T160000
+UID:znip-114@znip.me
+CREATED:20250919T224123Z
+DESCRIPTION:Come out to Sunset Dunes on October 26 from 1:00 pm to 4:00 pm
+  for Halloween fun https://sfrecpark.org/calendar.aspx?EID=8818\nApprox ag
+ e range: 0–12
+LOCATION:Sunset Dunes - Great Highway\, between Lincoln and Sloat San Fran
+ cisco CA 94122
 END:VEVENT
 END:VCALENDAR
