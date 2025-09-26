@@ -1,15 +1,25 @@
 (async () => {
+  function getRRuleClass() {
+    // Support either global exposure: window.RRule or window.rrule.RRule
+    if (typeof window !== 'undefined') {
+      if (typeof window.RRule !== 'undefined') return window.RRule;
+      if (window.rrule && typeof window.rrule.RRule !== 'undefined') return window.rrule.RRule;
+    }
+    return null;
+  }
+
   function expandRecurringForCalendar(events) {
-    if (typeof window.RRule === 'undefined') return [];
+    const RRuleCls = getRRuleClass();
+    if (!RRuleCls) return [];
     const out = [];
     const now = new Date();
     const startRange = new Date(now.getFullYear(), now.getMonth(), 1);
     const endRange = new Date(now.getFullYear(), now.getMonth() + 3, 0);
     for (const ev of events) {
       try {
-        const opts = window.RRule.parseString(ev.rrule);
+        const opts = RRuleCls.parseString(ev.rrule);
         if (ev.start) opts.dtstart = new Date(ev.start);
-        const rule = new window.RRule(opts);
+        const rule = new RRuleCls(opts);
         const occs = rule.between(startRange, endRange, true);
         for (const dt of occs) {
           const inst = { ...ev, start: dt.toISOString(), rrule: null };
@@ -34,7 +44,7 @@
 
   function toFC(ev) {
     const obj = { title: ev.title || '(no title)' };
-    if (ev.rrule && typeof window.RRule !== 'undefined') {
+    if (ev.rrule && getRRuleClass()) {
       obj.rrule = ev.rrule;
       if (ev.start) obj.dtstart = ev.start;
       obj.allDay = !!ev.allDay;
@@ -129,11 +139,12 @@
   }
 
   function nextOccurrenceFromRRule(ev) {
-    if (!ev.rrule || typeof window.RRule === 'undefined') return null;
+    const RRuleCls = getRRuleClass();
+    if (!ev.rrule || !RRuleCls) return null;
     try {
-      const opts = window.RRule.parseString(ev.rrule);
+      const opts = RRuleCls.parseString(ev.rrule);
       if (ev.start) opts.dtstart = new Date(ev.start);
-      const rule = new window.RRule(opts);
+      const rule = new RRuleCls(opts);
       const next = rule.after(startOfToday, true);
       if (!next) return null;
       return { ...ev, start: next.toISOString() };
