@@ -1382,4 +1382,102 @@ DESCRIPTION:Come out to Sunset Dunes on October 26 from 1:00 pm to 4:00 pm
 LOCATION:Sunset Dunes - Great Highway\, between Lincoln and Sloat San Fran
  cisco CA 94122
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Museum of Craft and Design – Free Admission
+DTSTART;VALUE=DATE:20251106
+DTEND;VALUE=DATE:20251106
+UID:znip-153@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:FREE Every First Thursday (New for 2025!). Rather than featuri
+ ng paintings or traditional sculpture\, the museum showcases other types o
+ f artwork ranging from furniture and kinetic sculptures to jewelry. Free e
+ ntries may require advance reservation and are subject to change. Please c
+ heck https://sf.funcheap.com/city-guide/monthly-free-museum-days/ or the m
+ useum website for latest updates.\nApprox age: 0+
+LOCATION:Museum of Craft and Design – 2569 Third Street\, San Francisco
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:BAMPFA Berkeley Art Museum – Free Admission
+DTSTART;VALUE=DATE:20251106
+DTEND;VALUE=DATE:20251106
+UID:znip-177@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:FREE First Thursdays. Galleries free for all on the first Thur
+ sday of each month. Open 11am to 7pm. Free entries may require advance res
+ ervation and are subject to change. Please check https://sf.funcheap.com/c
+ ity-guide/monthly-free-museum-days/ or the museum website for latest updat
+ es.\nApprox age: 0+
+LOCATION:BAMPFA Berkeley Art Museum – 2155 Center Street\, Berkeley – 
+ BART: Downtown Berkeley
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Museum of the African Diaspora (MoAD) – Free Admission
+DTSTART;VALUE=DATE:20251108
+DTEND;VALUE=DATE:20251108
+UID:znip-159@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:Tentative free day (pending MoAD has reopened in time). The Mu
+ seum of the African Diaspora (MoAD) offers free entry for “Thrive @ MoAD
+  Community Day”. Free entries may require advance reservation and are su
+ bject to change. Please check https://sf.funcheap.com/city-guide/monthly-f
+ ree-museum-days/ or the museum website for latest updates.\nApprox age: 0+
+LOCATION:Museum of the African Diaspora (MoAD) – 685 Mission St (at 3rd)
+ \, San Francisco (Ground floor of the St. Regis)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Museum of Craft and Design – Free Admission
+DTSTART;VALUE=DATE:20251204
+DTEND;VALUE=DATE:20251204
+UID:znip-154@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:FREE Every First Thursday (New for 2025!). Rather than featuri
+ ng paintings or traditional sculpture\, the museum showcases other types o
+ f artwork ranging from furniture and kinetic sculptures to jewelry. Free e
+ ntries may require advance reservation and are subject to change. Please c
+ heck https://sf.funcheap.com/city-guide/monthly-free-museum-days/ or the m
+ useum website for latest updates.\nApprox age: 0+
+LOCATION:Museum of Craft and Design – 2569 Third Street\, San Francisco
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:BAMPFA Berkeley Art Museum – Free Admission
+DTSTART;VALUE=DATE:20251204
+DTEND;VALUE=DATE:20251204
+UID:znip-178@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:FREE First Thursdays. Galleries free for all on the first Thur
+ sday of each month. Open 11am to 7pm. Free entries may require advance res
+ ervation and are subject to change. Please check https://sf.funcheap.com/c
+ ity-guide/monthly-free-museum-days/ or the museum website for latest updat
+ es.\nApprox age: 0+
+LOCATION:BAMPFA Berkeley Art Museum – 2155 Center Street\, Berkeley – 
+ BART: Downtown Berkeley
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Walt Disney Family Museum – Free Admission
+DTSTART;VALUE=DATE:20251205
+DTEND;VALUE=DATE:20251205
+UID:znip-183@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:FREE Admission for Walt's Birthday\, typically on December 5 (
+ Walt's actual birthday) unless museum hours require adjustment. Free entri
+ es may require advance reservation and are subject to change. Please check
+  https://sf.funcheap.com/city-guide/monthly-free-museum-days/ or the museu
+ m website for latest updates.\nApprox age: 0+
+LOCATION:Walt Disney Family Museum – 105 Montgomery Street\, The Presidi
+ o\, San Francisco
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Museum of the African Diaspora (MoAD) – Free Admission
+DTSTART;VALUE=DATE:20251213
+DTEND;VALUE=DATE:20251213
+UID:znip-160@znip.me
+CREATED:20250926T191940Z
+DESCRIPTION:Tentative free day (pending MoAD has reopened in time). The Mu
+ seum of the African Diaspora (MoAD) offers free entry for “Thrive @ MoAD
+  Community Day”. Free entries may require advance reservation and are su
+ bject to change. Please check https://sf.funcheap.com/city-guide/monthly-f
+ ree-museum-days/ or the museum website for latest updates.\nApprox age: 0+
+LOCATION:Museum of the African Diaspora (MoAD) – 685 Mission St (at 3rd)
+ \, San Francisco (Ground floor of the St. Regis)
+END:VEVENT
 END:VCALENDAR
